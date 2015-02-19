@@ -38,3 +38,6 @@ you can deploy to staging and production with:
 
     $ ./bin/deploy staging
     $ ./bin/deploy production
+
+## Team Members
+Barrett Stutzman
