@@ -42,3 +42,4 @@ you can deploy to staging and production with:
 ## Team Members
 * Barrett Stutzman
 * James Shirlaw
+* Big G
