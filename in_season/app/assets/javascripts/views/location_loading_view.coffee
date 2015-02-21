@@ -27,10 +27,10 @@ class App.Views.LocationLoadingView extends Backbone.View
     long = position.coords.longitude
     @get_addres_from lat, long
 
-  get_addres_from: (lat, long) =>
+  get_addres_from: (lat, long) ->
     geocoder = new google.maps.Geocoder()
     latlng = new (google.maps.LatLng)(lat, long)
-    geocoder.geocode { 'latLng': latlng }, (results, status) ->
+    geocoder.geocode { 'latLng': latlng }, (results, status) =>
       if status == google.maps.GeocoderStatus.OK
         if results[1]
           province = results[0].address_components[5].long_name
