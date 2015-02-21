@@ -1,10 +1,11 @@
 class App.Views.ProductDetials extends Backbone.View
 
-
   template: JST['tpl/product_details']
   className: 'product-detials'
 
   initialize: (options) ->
+    @frame = options.frame
+
     @_fetch_resource =>
       @app = options.app
       @$wrapper = options.wrapper
@@ -17,7 +18,7 @@ class App.Views.ProductDetials extends Backbone.View
     @$el.html @template @model.toJSON()
 
   _position: ->
-    @app.$content_area.html @el
+    @app.frame.content_area.html @el
 
   _fetch_resource: (callback) ->
     @model = new Backbone.Model({name: "Apple", details: "some details here"})

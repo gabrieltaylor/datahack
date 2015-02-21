@@ -26,40 +26,41 @@ window.addEventListener 'load', =>
 class App.Controller extends Backbone.Router
 
   initialize: (options = {}) ->
+    @province = localStorage.getItem('province')
+
     @on_client = options.on_client
     @server_url = options.server_url || "http://localhost:5000"
-    @_render_frame()
-    @load_resources =>
-      Backbone.history.start()
 
-  load_resources : (success_callback) ->
-    console.log "Loading Resoruces...needed"
-    success_callback()
+    @$content_area = $('#content-area')
 
-  _render_frame: ->
-    @frame = new App.Views.Frame
-    @$content_area  = $('.content-area')
+
+    Backbone.history.start()
+
 
   routes:
     "" : "location"
+    "test" : "test"
     'seasonal-products': "seasonal_products"
     'seasonal-products/:id': "show_product_details"
 
+
   location: ->
-    @province = localStorage.getItem('province')
     if @province
-      @navigate 'seasonal_products', tigger: true
+      @navigate 'seasonal-products', trigger: true, replace: true
     else
       new App.Views.LocationLoadingView app: @
 
-
   seasonal_products: ->
+    @_render_frame()
     new App.Views.SeasonalProducts app: this
 
-  show_product_details:(id) ->
-    new App.Views.ProductDetials {app: this}
+  show_product_details: (id) ->
+    @_render_frame()
+    new App.Views.ProductDetials app: this
 
 
+  _render_frame: ->
+    @frame = new App.Views.Frame app: this
 
 
 

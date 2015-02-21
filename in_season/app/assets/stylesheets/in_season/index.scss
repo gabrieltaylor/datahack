@@ -2,6 +2,18 @@
 .main-nav{
   height: 70px;
   background: #1abc9c;
+  .logo-small {
+    background-image: image-url("icon_small.png");
+    background-repeat: no-repeat;
+    width: 101px;
+    height: 24px;
+    display: inline-block;
+    margin: 20px 0 0 10px;
+  }
+
+  .province {
+    margin: 10px 10px 0 0;
+  }
 }
 
 #background-img {
@@ -26,9 +38,3 @@
 
 }
 
-.logo-small {
-  background-image: image-url("icon_small.png");
-  background-repeat: no-repeat;
-  width: 101;
-  height: 24px;
-}
