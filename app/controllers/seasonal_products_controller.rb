@@ -8,7 +8,7 @@ class SeasonalProductsController < ApplicationController
     end
     @province = Province.find(params[:id])
     @month = Month.where(name: month_name).first
-    @products = LocalSeasonalProduct.where(province: @province, month: @month)
+    @products = @province.local_seasonal_products.where(month: @month).collect(&:product)
     render json: @products
   end
 end
