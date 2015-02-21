@@ -4,6 +4,10 @@ class Province < ActiveRecord::Base
   has_many :products, through: :local_seasonal_products
   has_many :months, through: :local_seasonal_products
 
+  def products_for(month)
+    LocalSeasonalProducts.where(month: month)
+  end
+
   def as_json(options = nil)
     {
       id: id,

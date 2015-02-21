@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   resources :products
   resources :months
   resources :provinces
+  # resources :local_seasonal_products, as: 'seasonal_products'
+  get 'seasonal-products/:id' => 'seasonal_products#show', :as => 'seasonal_products'
 end
