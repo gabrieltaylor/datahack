@@ -28,17 +28,27 @@ class App.Controller extends Backbone.Router
   initialize: (options = {}) ->
     @on_client = options.on_client
     @server_url = options.server_url || "http://localhost:5000"
-
+    @_render_frame()
     @load_resources =>
       Backbone.history.start()
 
   load_resources : (success_callback) ->
-    console.log "Loading Resoruces...if needed"
+    console.log "Loading Resoruces...needed"
     success_callback()
+
+  _render_frame: ->
+    @frame = new App.Views.Frame
+    @$content_area  = $('.content-area')
 
   routes:
     "" : "in_season"
 
   in_season: ->
-    alert "Lets see whats in season"
+    new App.Views.InSeason app: this
+
+
+
+
+
+
 
