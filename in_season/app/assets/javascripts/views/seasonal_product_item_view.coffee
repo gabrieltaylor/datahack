@@ -21,7 +21,7 @@ class App.Views.SeasonalProduct extends Backbone.View
     @$el.html @template @model.toJSON()
 
   _position: ->
-    @app.$content_area.append @el
+    @$wrapper.append @el
 
 
 

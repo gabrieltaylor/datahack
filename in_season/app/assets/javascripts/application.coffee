@@ -57,7 +57,7 @@ class App.Controller extends Backbone.Router
     new App.Views.SeasonalProducts app: this
 
   show_product_details:(id) ->
-    new App.Views.ProductDetials {app: this}
+    new App.Views.ProductDetials app: this
 
 
 

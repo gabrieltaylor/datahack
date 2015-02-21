@@ -13,7 +13,6 @@ class App.Views.ProductDetials extends Backbone.View
 
 
   _render: ->
-    console.log @model.toJSON()
     @$el.html @template @model.toJSON()
 
   _position: ->

@@ -4,8 +4,6 @@ class App.Views.LocationLoadingView extends Backbone.View
 
   initialize: (options) ->
     @app = options.app
-
-    console.log @app
     @_render()
     @_position()
 
@@ -17,7 +15,6 @@ class App.Views.LocationLoadingView extends Backbone.View
 
   _position: ->
     $('body').html @el
-
 
   _on_device_ready: ->
     navigator.geolocation.getCurrentPosition @geolocation_success
@@ -42,3 +39,13 @@ class App.Views.LocationLoadingView extends Backbone.View
           alert 'No results found'
       else
         alert 'Geocoder failed due to: ' + status
+
+  # show_error: (error) =>
+  #   errors =
+  #     1: 'Permission denied',
+  #     2: 'Position unavailable',
+  #     3: 'Request timeout'
+
+  #   alert "Error: " + errors[error.code]
+
+  #   @error_callback() if @error_callback
