@@ -1,7 +1,7 @@
 class App.Views.ProductDetials extends Backbone.View
 
   template: JST['tpl/product_details']
-  className: 'product-detials'
+  className: 'product-details'
 
   initialize: (options) ->
     @frame = options.frame

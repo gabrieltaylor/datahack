@@ -1,7 +1,6 @@
 class App.Views.SeasonalProduct extends Backbone.View
 
   template: JST['tpl/seasonal_product_item']
-  # className: 'seasonal-product-item'
   tagName: 'li'
 
   initialize: (options) ->
@@ -22,7 +21,3 @@ class App.Views.SeasonalProduct extends Backbone.View
 
   _position: ->
     @$wrapper.append @el
-
-
-
-
