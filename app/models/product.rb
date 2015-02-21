@@ -61,7 +61,7 @@ class Product
       "Quebec" => 0,
       "Saskatchewan" => 0 
     }, context: "vegetable",
-    nutrition: {"Food name"=>"Artichoke, boiled, drained", "Measure"=>"1 medium", "Weight "=>"120", "Energy"=>"60", "Protein"=>"4", "Carbohydrate"=>"13", "Total Sugar"=>"1", "Total Dietary Fibre"=>"4.7", "Calcium"=>"54", "Iron"=>"1.5", "Sodium"=>"114", "Potassium"=>"425", "Vitamin A"=>"11", "Vitamin C"=>"12", "Vitamin B12"=>"0"}
+    nutrition: { :measure=>"1 medium", :weight=>120, :calories=>60, :protein=>4, :carbohydrate=>13, :total_sugar=>1, :total_dietary_fibre=>4.7, :calcium=>54, :iron=>1.5, :sodium=>114, :potassium=>425, :vitamin_a=>11, :vitamin_c=>12, :vitamin_b12=>0}
   },
   {
     name: "Asparagus", months: ["May", "June"],
@@ -77,7 +77,7 @@ class Product
       "Quebec" => 19.8,
       "Saskatchewan" => 0 
     }, context: "vegetable",
-    nutrition: {"Food name"=>"Asparagus, fresh or frozen, boiled, drained", "Measure"=>"6 spears", "Weight "=>"90", "Energy"=>"18", "Protein"=>"2", "Carbohydrate"=>"3", "Total Sugar"=>"1", "Total Dietary Fibre"=>"1.6", "Calcium"=>"18", "Iron"=>"0.7", "Sodium"=>"8", "Potassium"=>"178", "Vitamin A"=>"41", "Vitamin C"=>"14", "Vitamin B12"=>"0"}
+    nutrition: { :measure=>"6 spears", :weight=>90, :calories=>18, :protein=>2, :carbohydrate=>3, :total_sugar=>1, :total_dietary_fibre=>1.6, :calcium=>18, :iron=>0.7, :sodium=>8, :potassium=>178, :vitamin_a=>41, :vitamin_c=>14, :vitamin_b12=>0}
   },
   {
     name: "Beets", months: ["January", "February", "March", "April", "July", "August", "September", "October", "November", "December"],
@@ -93,7 +93,7 @@ class Product
       "Quebec" => 48.8,
       "Saskatchewan" => 0.2 
     }, context: "vegetable",
-    nutrition: {"Food name"=>"Beets, sliced, boiled, drained", "Measure"=>"125mL", "Weight "=>"90", "Energy"=>"40", "Protein"=>"2", "Carbohydrate"=>"9", "Total Sugar"=>"7", "Total Dietary Fibre"=>"1.8", "Calcium"=>"14", "Iron"=>"0.7", "Sodium"=>"69", "Potassium"=>"274", "Vitamin A"=>"2", "Vitamin C"=>"3", "Vitamin B12"=>"0"}
+    nutrition: {:measure=>"125mL", :weight=>90, :calories=>40, :protein=>2, :carbohydrate=>9, :total_sugar=>7, :total_dietary_fibre=>1.8, :calcium=>14, :iron=>0.7, :sodium=>69, :potassium=>274, :vitamin_a=>2, :vitamin_c=>3, :vitamin_b12=>0}
   },
   {
     name: "Brocolli", months: ["June", "July", "August", "September", "October"],
@@ -109,7 +109,7 @@ class Product
       "Quebec" => 58.9,
       "Saskatchewan" => 0 
     }, context: "vegetable",
-    nutrition: {"Food name"=>"Broccoli, chopped, raw", "Measure"=>"125mL", "Weight "=>"46", "Energy"=>"16", "Protein"=>"1", "Carbohydrate"=>"3", "Total Sugar"=>"1", "Total Dietary Fibre"=>"1.1", "Calcium"=>"22", "Iron"=>"0.3", "Sodium"=>"15", "Potassium"=>"147", "Vitamin A"=>"15", "Vitamin C"=>"41", "Vitamin B12"=>"0"}
+    nutrition: { :measure=>"125mL", :weight=>46, :calories=>16, :protein=>1, :carbohydrate=>3, :total_sugar=>1, :total_dietary_fibre=>1.1, :calcium=>22, :iron=>0.3, :sodium=>15, :potassium=>147, :vitamin_a=>15, :vitamin_c=>41, :vitamin_b12=>0}
   },
   {
     name: "Brussels Sprouts", months: ["September", "October", "November"],
@@ -125,7 +125,7 @@ class Product
       "Quebec" => 10,
       "Saskatchewan" => 0 
     }, context: "vegetable",
-    nutrition: {"Food name"=>"Brussels sprouts, fresh or frozen, boiled, drained", "Measure"=>"4 sprouts", "Weight "=>"84", "Energy"=>"33", "Protein"=>"3", "Carbohydrate"=>"6", "Total Sugar"=>"2", "Total Dietary Fibre"=>"3.2", "Calcium"=>"26", "Iron"=>"0.7", "Sodium"=>"15", "Potassium"=>"255", "Vitamin A"=>"36", "Vitamin C"=>"45", "Vitamin B12"=>"0"}
+    nutrition: {:measure=>"4 sprouts", :weight=>84, :calories=>33, :protein=>3, :carbohydrate=>6, :total_sugar=>2, :total_dietary_fibre=>3.2, :calcium=>26, :iron=>0.7, :sodium=>15, :potassium=>255, :vitamin_a=>36, :vitamin_c=>45, :vitamin_b12=>0}
   },
   {
     name: "Cabbage", months: ["January", "February", "March", "April", "June", "July", "August", "September", "October", "November", "December"],
@@ -141,7 +141,7 @@ class Product
       "Quebec" => 48,
       "Saskatchewan" => 0 
     }, context: "vegetable",
-    nutrition: {"Food name"=>"Cabbage, green, shredded, raw", "Measure"=>"125mL", "Weight "=>"37", "Energy"=>"9", "Protein"=>"1", "Carbohydrate"=>"2", "Total Sugar"=>"1", "Total Dietary Fibre"=>"0.7", "Calcium"=>"17", "Iron"=>"0.2", "Sodium"=>"7", "Potassium"=>"91", "Vitamin A"=>"3", "Vitamin C"=>"12", "Vitamin B12"=>"0"}
+    nutrition: {:measure=>"125mL", :weight=>37, :calories=>9, :protein=>1, :carbohydrate=>2, :total_sugar=>1, :total_dietary_fibre=>0.7, :calcium=>17, :iron=>0.2, :sodium=>7, :potassium=>91, :vitamin_a=>3, :vitamin_c=>12, :vitamin_b12=>0}
   },
   {
     name: "Cauliflower", months: ["June", "July", "August", "September", "October", "November"],
@@ -157,7 +157,7 @@ class Product
       "Quebec" => 48.8,
       "Saskatchewan" => 0 
     }, context: "vegetable",
-    nutrition: {"Food name"=>"Cauliflower, pieces, raw", "Measure"=>"125mL", "Weight "=>"53", "Energy"=>"13", "Protein"=>"1", "Carbohydrate"=>"3", "Total Sugar"=>"1", "Total Dietary Fibre"=>"0.9", "Calcium"=>"12", "Iron"=>"0.2", "Sodium"=>"16", "Potassium"=>"160", "Vitamin A"=>"1", "Vitamin C"=>"25", "Vitamin B12"=>"0"}
+    nutrition: { :measure=>"125mL", :weight=>53, :calories=>13, :protein=>1, :carbohydrate=>3, :total_sugar=>1, :total_dietary_fibre=>0.9, :calcium=>12, :iron=>0.2, :sodium=>16, :potassium=>160, :vitamin_a=>1, :vitamin_c=>25, :vitamin_b12=>0}
   },
   {
     name: "Celery", months: ["July", "August", "September", "October"],
@@ -173,7 +173,7 @@ class Product
       "Quebec" => 62,
       "Saskatchewan" => 0 
     }, context: "vegetable",
-    nutrition: {"Food name"=>"Celery, raw", "Measure"=>"1", "Weight "=>"40", "Energy"=>"6", "Protein"=>"tr", "Carbohydrate"=>"1", "Total Sugar"=>"1", "Total Dietary Fibre"=>"0.6", "Calcium"=>"16", "Iron"=>"0.1", "Sodium"=>"32", "Potassium"=>"104", "Vitamin A"=>"9", "Vitamin C"=>"1", "Vitamin B12"=>"0"}
+    nutrition: {:measure=>1, :weight=>40, :calories=>6, :protein=>"tr", :carbohydrate=>1, :total_sugar=>1, :total_dietary_fibre=>0.6, :calcium=>16, :iron=>0.1, :sodium=>32, :potassium=>104, :vitamin_a=>9, :vitamin_c=>1, :vitamin_b12=>0}
   },
   {
     name: "Cucumbers", months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
@@ -189,7 +189,7 @@ class Product
       "Quebec" => 35.7,
       "Saskatchewan" => 0.1 
     }, context: "vegetable",
-    nutrition: {"Food name"=>"Cucumber, peeled, raw", "Measure"=>"4 slices", "Weight "=>"28", "Energy"=>"3", "Protein"=>"tr", "Carbohydrate"=>"1", "Total Sugar"=>"tr", "Total Dietary Fibre"=>"0.2", "Calcium"=>"4", "Iron"=>"0.1", "Sodium"=>"1", "Potassium"=>"38", "Vitamin A"=>"1", "Vitamin C"=>"1", "Vitamin B12"=>"0"}
+    nutrition: {:measure=>"4 slices", :weight=>28, :calories=>3, :protein=>"tr", :carbohydrate=>1, :total_sugar=>"tr", :total_dietary_fibre=>0.2, :calcium=>4, :iron=>0.1, :sodium=>1, :potassium=>38, :vitamin_a=>1, :vitamin_c=>1, :vitamin_b12=>0}
   },
   {
     name: "Eggplant", months: ["August", "September", "October"],
@@ -205,7 +205,7 @@ class Product
       "Quebec" => 0,
       "Saskatchewan" => 0 
     }, context: "vegetable",
-    nutrition: {"Food name"=>"Eggplant, pieces, boiled, drained", "Measure"=>"125mL", "Weight "=>"52", "Energy"=>"18", "Protein"=>"tr", "Carbohydrate"=>"5", "Total Sugar"=>"2", "Total Dietary Fibre"=>"1.3", "Calcium"=>"3", "Iron"=>"0.1", "Sodium"=>"1", "Potassium"=>"64", "Vitamin A"=>"1", "Vitamin C"=>"1", "Vitamin B12"=>"0"}
+    nutrition: {:measure=>"125mL", :weight=>52, :calories=>18, :protein=>"tr", :carbohydrate=>5, :total_sugar=>2, :total_dietary_fibre=>1.3, :calcium=>3, :iron=>0.1, :sodium=>1, :potassium=>64, :vitamin_a=>1, :vitamin_c=>1, :vitamin_b12=>0}
   },
   {
     name: "Lettuce", months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
@@ -221,7 +221,7 @@ class Product
       "Quebec" => 87.8,
       "Saskatchewan" => 0 
     }, context: "vegetable",
-    nutrition: {"Food name"=>"Lettuce, iceberg, shredded", "Measure"=>"250mL", "Weight "=>"58", "Energy"=>"8", "Protein"=>"1", "Carbohydrate"=>"2", "Total Sugar"=>"1", "Total Dietary Fibre"=>"0.7", "Calcium"=>"10", "Iron"=>"0.2", "Sodium"=>"6", "Potassium"=>"82", "Vitamin A"=>"15", "Vitamin C"=>"2", "Vitamin B12"=>"0"}
+    nutrition: { :measure=>"250mL", :weight=>58, :calories=>8, :protein=>1, :carbohydrate=>2, :total_sugar=>1, :total_dietary_fibre=>0.7, :calcium=>10, :iron=>0.2, :sodium=>6, :potassium=>82, :vitamin_a=>15, :vitamin_c=>2, :vitamin_b12=>0}
   },
   {
     name: "Mushrooms", months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
@@ -237,7 +237,7 @@ class Product
       "Quebec" => 0,
       "Saskatchewan" => 0 
     }, context: "vegetable",
-    nutrition: {"Food name"=>"Mushrooms, raw", "Measure"=>"3 medium", "Weight "=>"54", "Energy"=>"12", "Protein"=>"2", "Carbohydrate"=>"2", "Total Sugar"=>"1", "Total Dietary Fibre"=>"0.6", "Calcium"=>"2", "Iron"=>"0.3", "Sodium"=>"2", "Potassium"=>"170", "Vitamin A"=>"0", "Vitamin C"=>"1", "Vitamin B12"=>"0.02"}
+    nutrition: { :measure=>"3 medium", :weight=>54, :calories=>12, :protein=>2, :carbohydrate=>2, :total_sugar=>1, :total_dietary_fibre=>0.6, :calcium=>2, :iron=>0.3, :sodium=>2, :potassium=>170, :vitamin_a=>0, :vitamin_c=>1, :vitamin_b12=>0.02}
   },
   {
     name: "Okra", months: ["January", "February", "March", "December"],
@@ -252,7 +252,8 @@ class Product
       "Prince Edward Island" => 0,
       "Quebec" => 0,
       "Saskatchewan" => 0 
-    }, context: "vegetable"
+    }, context: "vegetable",
+    nutrition: {:measure=>"100mL", :weight=>100, :calories=>33, :protein=>1.9, :carbohydrate=>7, :total_sugar=>1.5, :total_dietary_fibre=>3.2, :calcium=>8, :iron=>3, :sodium=>7, :potassium=>299, :vitamin_a=>14, :vitamin_c=>38, :vitamin_b12=>0}
   },
   {
     name: "Onions", months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
@@ -268,7 +269,7 @@ class Product
       "Quebec" => 35.5,
       "Saskatchewan" => 0 
     }, context: "vegetable",
-    nutrition: {"Food name"=>"Onions, yellow, chopped, raw", "Measure"=>"60mL", "Weight "=>"41", "Energy"=>"17", "Protein"=>"tr", "Carbohydrate"=>"4", "Total Sugar"=>"2", "Total Dietary Fibre"=>"0.6", "Calcium"=>"9", "Iron"=>"0.1", "Sodium"=>"1", "Potassium"=>"58", "Vitamin A"=>"0", "Vitamin C"=>"3", "Vitamin B12"=>"0"}
+    nutrition: {:measure=>"60mL", :weight=>41, :calories=>17, :protein=>"tr", :carbohydrate=>4, :total_sugar=>2, :total_dietary_fibre=>0.6, :calcium=>9, :iron=>0.1, :sodium=>1, :potassium=>58, :vitamin_a=>0, :vitamin_c=>3, :vitamin_b12=>0}
   },
   {
     name: "Peppers", months: ["March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
@@ -284,7 +285,7 @@ class Product
       "Quebec" => 30.5,
       "Saskatchewan" => 0 
     }, context: "vegetable",
-    nutrition: {"Food name"=>"Pepper, sweet, red, raw", "Measure"=>"  1/2 ", "Weight "=>"60", "Energy"=>"15", "Protein"=>"1", "Carbohydrate"=>"4", "Total Sugar"=>"2", "Total Dietary Fibre"=>"0.8", "Calcium"=>"4", "Iron"=>"0.3", "Sodium"=>"1", "Potassium"=>"126", "Vitamin A"=>"93", "Vitamin C"=>"113", "Vitamin B12"=>"0"}
+    nutrition: {:measure=>"  1/2 ", :weight=>60, :calories=>15, :protein=>1, :carbohydrate=>4, :total_sugar=>2, :total_dietary_fibre=>0.8, :calcium=>4, :iron=>0.3, :sodium=>1, :potassium=>126, :vitamin_a=>93, :vitamin_c=>113, :vitamin_b12=>0}
   },
   {
     name: "Potatoes", months: ["January", "February", "March", "July", "August", "September", "October", "November", "December"],
@@ -300,7 +301,7 @@ class Product
       "Quebec" => 0,
       "Saskatchewan" => 0 
     }, context: "vegetable",
-    nutrition: {"Food name"=>"Potato, baked, flesh and skin", "Measure"=>"1", "Weight "=>"173", "Energy"=>"161", "Protein"=>"4", "Carbohydrate"=>"37", "Total Sugar"=>"2", "Total Dietary Fibre"=>"3.8", "Calcium"=>"26", "Iron"=>"1.9", "Sodium"=>"17", "Potassium"=>"926", "Vitamin A"=>"2", "Vitamin C"=>"17", "Vitamin B12"=>"0"}
+    nutrition: {:measure=>1, :weight=>173, :calories=>161, :protein=>4, :carbohydrate=>37, :total_sugar=>2, :total_dietary_fibre=>3.8, :calcium=>26, :iron=>1.9, :sodium=>17, :potassium=>926, :vitamin_a=>2, :vitamin_c=>17, :vitamin_b12=>0},
   },
   {
     name: "Pumpkins", months: ["September", "October", "November"],
@@ -316,7 +317,7 @@ class Product
       "Quebec" => 20,
       "Saskatchewan" => 0 
     }, context: "vegetable",
-    nutrition: {"Food name"=>"Pumpkin, canned", "Measure"=>"125mL", "Weight "=>"129", "Energy"=>"44", "Protein"=>"1", "Carbohydrate"=>"10", "Total Sugar"=>"4", "Total Dietary Fibre"=>"3.8", "Calcium"=>"34", "Iron"=>"1.8", "Sodium"=>"6", "Potassium"=>"267", "Vitamin A"=>"1007", "Vitamin C"=>"5", "Vitamin B12"=>"0"}
+    nutrition: { :measure=>"125mL", :weight=>129, :calories=>44, :protein=>1, :carbohydrate=>10, :total_sugar=>4, :total_dietary_fibre=>3.8, :calcium=>34, :iron=>1.8, :sodium=>6, :potassium=>267, :vitamin_a=>1007, :vitamin_c=>5, :vitamin_b12=>0}
   },
   {
     name: "Radishes", months: ["May", "June", "July", "August", "September", "October", "November"],
@@ -332,7 +333,7 @@ class Product
       "Quebec" => 75.5,
       "Saskatchewan" => 0 
     }, context: "vegetable",
-    nutrition: {"Food name"=>"Radishes", "Measure"=>"3 medium", "Weight "=>"14", "Energy"=>"2", "Protein"=>"tr", "Carbohydrate"=>"tr", "Total Sugar"=>"tr", "Total Dietary Fibre"=>"0.2", "Calcium"=>"3", "Iron"=>"tr", "Sodium"=>"5", "Potassium"=>"31", "Vitamin A"=>"0", "Vitamin C"=>"2", "Vitamin B12"=>"0"}
+    nutrition: {:measure=>"3 medium", :weight=>14, :calories=>2, :protein=>"tr", :carbohydrate=>"tr", :total_sugar=>"tr", :total_dietary_fibre=>0.2, :calcium=>3, :iron=>"tr", :sodium=>5, :potassium=>31, :vitamin_a=>0, :vitamin_c=>2, :vitamin_b12=>0 }
   },
   {
     name: "Shallots", months: [],
@@ -348,7 +349,7 @@ class Product
       "Quebec" => 55.2,
       "Saskatchewan" => 0 
     }, context: "vegetable",
-    nutrition: {"Food name"=>"Onions, green (scallion), raw", "Measure"=>"1 medium", "Weight "=>"15", "Energy"=>"5", "Protein"=>"tr", "Carbohydrate"=>"1", "Total Sugar"=>"tr", "Total Dietary Fibre"=>"0.4", "Calcium"=>"11", "Iron"=>"0.2", "Sodium"=>"2", "Potassium"=>"41", "Vitamin A"=>"8", "Vitamin C"=>"3", "Vitamin B12"=>"0"}
+    nutrition: {:measure =>"1 medium", :weight =>15, :energy=>5, :protein=>"tr", :carbohydrate=>1, :total_sugar=>"tr", :total_dietary_fibre=>0.4, :calcium=>11, :iron=>0.2, :sodium=>2, :potassium=>41, :vitamin_a=>8, :vitamin_c=>3, :vitamin_b12=>0}
   },
   {
     name: "Spinach", months: ["May", "June", "July", "August", "September", "October"],
@@ -364,7 +365,7 @@ class Product
       "Quebec" => 0,
       "Saskatchewan" => 0 
     }, context: "vegetable",
-    nutrition: {"Food name"=>"Spinach, chopped, raw", "Measure"=>"250mL", "Weight "=>"32", "Energy"=>"7", "Protein"=>"1", "Carbohydrate"=>"1", "Total Sugar"=>"tr", "Total Dietary Fibre"=>"0.7", "Calcium"=>"31", "Iron"=>"0.9", "Sodium"=>"25", "Potassium"=>"177", "Vitamin A"=>"149", "Vitamin C"=>"9", "Vitamin B12"=>"0"}
+    nutrition: { :measure=>"250mL", :weight=>32, :calories=>7, :protein=>1, :carbohydrate=>1, :total_sugar=>"tr", :total_dietary_fibre=>0.7, :calcium=>31, :iron=>0.9, :sodium=>25, :potassium=>177, :vitamin_a=>149, :vitamin_c=>9, :vitamin_b12=>0}
   },
   {
     name: "Squash", months: ["January", "February", "March", "August", "September", "October", "November", "December"],
@@ -380,7 +381,7 @@ class Product
       "Quebec" => 21.7,
       "Saskatchewan" => 0 
     }, context: "vegetable",
-    nutrition: {"Food name"=>"Squash, butternut, cubed, baked", "Measure"=>"125mL", "Weight "=>"108", "Energy"=>"43", "Protein"=>"1", "Carbohydrate"=>"11", "Total Sugar"=>"2", "Total Dietary Fibre"=>"1.8", "Calcium"=>"44", "Iron"=>"0.6", "Sodium"=>"4", "Potassium"=>"308", "Vitamin A"=>"413", "Vitamin C"=>"16", "Vitamin B12"=>"0"}
+    nutrition: {:measure=>"125mL", :weight=>108, :calories=>43, :protein=>1, :carbohydrate=>11, :total_sugar=>2, :total_dietary_fibre=>1.8, :calcium=>44, :iron=>0.6, :sodium=>4, :potassium=>308, :vitamin_a=>413, :vitamin_c=>16, :vitamin_b12=>0}
   },
   {
     name: "Sweet Potatoes", months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
@@ -395,7 +396,8 @@ class Product
       "Prince Edward Island" => 0,
       "Quebec" => 0,
       "Saskatchewan" => 0 
-    }, context: "vegetable"
+    }, context: "vegetable",
+     nutrition: { measure: 1, weight: 133, calories: 114, protein: "tr", carbohydrate: 1, total_suger: 0,total_dietary_fibre: 0, calcium: 0, sodium:0 , potassium:0 }
   },
   {
     name: "Zucchini", months: ["July", "August", "September", "October"],
@@ -411,7 +413,7 @@ class Product
       "Quebec" => 21.7,
       "Saskatchewan" => 0 
     }, context: "vegetable",
-    nutrition: {"Food name"=>"Zucchini, raw, slices", "Measure"=>"4", "Weight "=>"40", "Energy"=>"6", "Protein"=>"tr", "Carbohydrate"=>"1", "Total Sugar"=>"1", "Total Dietary Fibre"=>"0.4", "Calcium"=>"6", "Iron"=>"0.1", "Sodium"=>"4", "Potassium"=>"104", "Vitamin A"=>"4", "Vitamin C"=>"7", "Vitamin B12"=>"0"}
+    nutrition: {:measure=>4, :weight=>40, :calories=>6, :protein=>"tr", :carbohydrate=>1, :total_sugar=>1, :total_dietary_fibre=>0.4, :calcium=>6, :iron=>0.1, :sodium=>4, :potassium=>104, :vitamin_a=>4, :vitamin_c=>7, :vitamin_b12=>0}
   },
   {
     name: "Carrots", months: ["January", "February", "March", "April", "May", "July", "August", "September", "October", "November", "December"],
@@ -427,7 +429,7 @@ class Product
       "Quebec" => 31,
       "Saskatchewan" => 0 
     }, context: "vegetable",
-    nutrition: {"Food name"=>"Carrots, raw", "Measure"=>"1 medium", "Weight "=>"61", "Energy"=>"25", "Protein"=>"1", "Carbohydrate"=>"6", "Total Sugar"=>"3", "Total Dietary Fibre"=>"1.5", "Calcium"=>"20", "Iron"=>"0.2", "Sodium"=>"42", "Potassium"=>"195", "Vitamin A"=>"367", "Vitamin C"=>"4", "Vitamin B12"=>"0"}
+    nutrition: {:measure=>"1 medium", :weight=>61, :calories=>25, :protein=>1, :carbohydrate=>6, :total_sugar=>3, :total_dietary_fibre=>1.5, :calcium=>20, :iron=>0.2, :sodium=>42, :potassium=>195, :vitamin_a=>367, :vitamin_c=>4, :vitamin_b12=>0}
   },
   {
     name: "Beans", months: ["June", "July", "August", "September", "October"],
@@ -442,7 +444,8 @@ class Product
       "Prince Edward Island" => 0,
       "Quebec" => 38.4,
       "Saskatchewan" => 0 
-    }, context: "vegetable"
+    }, context: "vegetable",
+    nutrition: {measure: 12.1, weight: 100, calories: 41, protein: 2.6, carbohydrate: 8, total_suger: 0.3, total_dietary_fibre: 1.9, calcium: 1, sodium: 1, potassium: 179, :vitamin_a=>0, :vitamin_c=>0, :vitamin_b12=>0}
   },
   {
     name: "Corn", months: ["July", "August", "September", "October"],
@@ -458,7 +461,7 @@ class Product
       "Quebec" => 32.2,
       "Saskatchewan" => 0 
     }, context: "vegetable",
-    nutrition: {"Food name"=>"Corn, sweet, on or off cob, fresh or frozen, boiled, drained", "Measure"=>"125mL", "Weight "=>"87", "Energy"=>"82", "Protein"=>"3", "Carbohydrate"=>"19", "Total Sugar"=>"3", "Total Dietary Fibre"=>"2", "Calcium"=>"2", "Iron"=>"0.5", "Sodium"=>"8", "Potassium"=>"209", "Vitamin A"=>"7", "Vitamin C"=>"4", "Vitamin B12"=>"0"}
+    nutrition: {:measure=>"125mL", :weight=>87, :calories=>82, :protein=>3, :carbohydrate=>19, :total_sugar=>3, :total_dietary_fibre=>2, :calcium=>2, :iron=>0.5, :sodium=>8, :potassium=>209, :vitamin_a=>7, :vitamin_c=>4, :vitamin_b12=>0}
   },
   {
     name: "Garlic", months: [],
@@ -473,7 +476,8 @@ class Product
       "Prince Edward Island" => 0,
       "Quebec" => 0,
       "Saskatchewan" => 0.9 
-    }, context: "vegetable"
+    }, context: "vegetable",
+    nutrition: {}
   },
   {
     name: "Tomatoes", months: ["March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
@@ -488,8 +492,9 @@ class Product
       "Prince Edward Island" => 0,
       "Quebec" => 3.34,
       "Saskatchewan" => 0 
-    }, context: "vegetable",
-    nutrition: {"Food name"=>"Tomatoes, raw", "Measure"=>"1", "Weight "=>"123", "Energy"=>"22", "Protein"=>"1", "Carbohydrate"=>"5", "Total Sugar"=>"3", "Total Dietary Fibre"=>"1.5", "Calcium"=>"12", "Iron"=>"0.3", "Sodium"=>"6", "Potassium"=>"292", "Vitamin A"=>"52", "Vitamin C"=>"16", "Vitamin B12"=>"0"}
+    }, 
+    context: "vegetable",
+    nutrition: { :measure=>"1", :weight=>123, :energy=>22, :protein=>1, :carbohydrate=>5, :total_sugar=>3, :total_dietary_fibre=>1.5, :calcium=>12, :iron=>0.3, :sodium=>6, :potassium=>292, :vitamin_a=>52, :vitamin_c=>16, :vitamin_b12 =>0}
   },
   {
     name: "Peas", months: [],
@@ -504,8 +509,9 @@ class Product
       "Prince Edward Island" => 0,
       "Quebec" => 32.1,
       "Saskatchewan" => 0 
-    }, context: "vegetable",
-    nutrition: {"Food name"=>"Peas, green, frozen, boiled, drained", "Measure"=>"125mL", "Weight "=>"85", "Energy"=>"66", "Protein"=>"4", "Carbohydrate"=>"12", "Total Sugar"=>"4", "Total Dietary Fibre"=>"3.7", "Calcium"=>"20", "Iron"=>"1.3", "Sodium"=>"61", "Potassium"=>"93", "Vitamin A"=>"89", "Vitamin C"=>"8", "Vitamin B12"=>"0"}
+    }, 
+    context: "vegetable",
+    nutrition: { :measure=>"125mL", :weight=>85, :energy=>66, :protein=>4, :carbohydrate=>12, :total_sugar=>4, :total_dietary_fibre=>3.7, :calcium=>20, :iron=>1.3, :sodium=>61, :potassium=>93, :vitamin_a=>89, :vitamin_c=>8, :vitamin_b12=>0}
   },
   {
     name: "Leeks", months: [],
@@ -521,7 +527,7 @@ class Product
       "Quebec" => 57.5,
       "Saskatchewan" => 0 
     }, context: "vegetable",
-    nutrition: {"Food name"=>"Leeks, chopped, boiled, drained", "Measure"=>"125mL", "Weight "=>"55", "Energy"=>"17", "Protein"=>"tr", "Carbohydrate"=>"4", "Total Sugar"=>nil, "Total Dietary Fibre"=>"0.5", "Calcium"=>"16", "Iron"=>"0.6", "Sodium"=>"5", "Potassium"=>"48", "Vitamin A"=>"1", "Vitamin C"=>"2", "Vitamin B12"=>"0"}
+    nutrition: {:measure=>"125mL", :weight=>55, :energy=>17, :protein=>"tr", :carbohydrate=>4, :total_sugar=>nil, :total_dietary_fibre=>0.5, :calcium=>16, :iron=>0.6, :sodium=>5, :potassium=>48, :vitamin_a=>1, :vitamin_c=>2, :vitamin_b12=>0}
   },
   {
     name: "Parsnips", months: [],
@@ -537,7 +543,7 @@ class Product
       "Quebec" => 28.6,
       "Saskatchewan" => 0 
     }, context: "vegetable",
-    nutrition: {"Food name"=>"Parsnip, sliced, boiled, drained", "Measure"=>"125mL", "Weight "=>"82", "Energy"=>"59", "Protein"=>"1", "Carbohydrate"=>"14", "Total Sugar"=>"4", "Total Dietary Fibre"=>"2.7", "Calcium"=>"30", "Iron"=>"0.5", "Sodium"=>"8", "Potassium"=>"302", "Vitamin A"=>"0", "Vitamin C"=>"11", "Vitamin B12"=>"0"}
+    nutrition: {:measure=>"125mL", :weight=>82, :energy=>59, :protein=>1, :carbohydrate=>14,:total_sugar=>4, :total_dietary_fibre=>2.7, :calcium=>30, :iron=>0.5, :sodium=>8, :potassium=>302, :vitamin_a=>0, :vitamin_c=>11, :vitamin_b12=>0}
   },
   {
     name: "Turnips", months: [],
@@ -553,7 +559,7 @@ class Product
       "Quebec" => 29.8,
       "Saskatchewan" => 0 
     }, context: "vegetable",
-    nutrition: {"Food name"=>"Rutabaga (yellow turnip), diced, boiled, drained", "Measure"=>"125mL", "Weight "=>"90", "Energy"=>"35", "Protein"=>"1", "Carbohydrate"=>"8", "Total Sugar"=>"5", "Total Dietary Fibre"=>"1.6", "Calcium"=>"43", "Iron"=>"0.5", "Sodium"=>"18", "Potassium"=>"293", "Vitamin A"=>"13", "Vitamin C"=>"17", "Vitamin B12"=>"0"}
+    nutrition: {:measure=>"125mL", :weigh=>90, :energy=>35, :protein=>1, :carbohydrate=>8, :total_sugar=>5, :total_dietary_fibre=>1.6, :calcium=>43, :iron=>0.5, :sodium=>18, :potassium=>293, :vitamin_a=>13, :vitamin_c=>17, :vitamin_b12=>0}
   },
   {
     name: "Apples", months: ["August", "September", "October", "November"],
@@ -570,7 +576,7 @@ class Product
        "Saskatchewan" => 0
     },
        context: "fruit",
-       nutrition: {"Food name"=>"Apple with skin (7cm.diam)", "Measure"=>"1", "Weight "=>"138", "Energy"=>"72", "Protein"=>"tr", "Carbohydrate"=>"19", "Total Sugar"=>"14", "Total Dietary Fibre"=>"2.6", "Calcium"=>"8", "Iron"=>"0.2", "Sodium"=>"1", "Potassium"=>"148", "Vitamin A"=>"4", "Vitamin C"=>"6", "Vitamin B12"=>"0"}
+       nutrition: {measure: 1, weight: 138, calories: 72, protein: "tr", carbohydrate: 19, total_suger: 14,total_dietary_fibre: 2.6, calcium: 8, sodium: 1, potassium: 148,  :vitamin_a=>4, :vitamin_c=>6, :vitamin_b12=>0}
   },
   {
     name: "Apricots", months: ["July", "August"],
@@ -578,7 +584,7 @@ class Product
       "New Brunswick" => 0, "Newfoundland and Labrador" => 0, "Nova Scotia" => 0, 
       "Ontario" => 7.7, "Prince Edward Island" => 0, "Quebec" => 0, "Saskatchewan" => 0}, 
       context: "fruit",
-      nutrition: {"Food name"=>"Apricots, raw", "Measure"=>"3", "Weight "=>"105", "Energy"=>"50", "Protein"=>"1", "Carbohydrate"=>"12", "Total Sugar"=>"10", "Total Dietary Fibre"=>"2.1", "Calcium"=>"14", "Iron"=>"0.4", "Sodium"=>"1", "Potassium"=>"272", "Vitamin A"=>"101", "Vitamin C"=>"11", "Vitamin B12"=>"0"}
+      nutrition: {:measure=>3, :weight=>105, :calories=>50, :protein=>1, :carbohydrate=>12, :total_sugar=>10, :total_dietary_fibre=>2.1, :calcium=>14, :iron=>0.4, :sodium=>1, :potassium=>272, :vitamin_a=>101, :vitamin_c=>11, :vitamin_b12=>0 }
   },
   {
     name: "Bananas", months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
@@ -595,7 +601,7 @@ class Product
       "Saskatchewan" => 0 
     }, 
     context: "fruit",
-    nutrition: {"Food name"=>"Banana", "Measure"=>"1", "Weight "=>"118", "Energy"=>"105", "Protein"=>"1", "Carbohydrate"=>"27", "Total Sugar"=>"14", "Total Dietary Fibre"=>"2.1", "Calcium"=>"6", "Iron"=>"0.3", "Sodium"=>"1", "Potassium"=>"422", "Vitamin A"=>"4", "Vitamin C"=>"10", "Vitamin B12"=>"0"}
+    nutrition: {:measure=>1, :weight=>118, :calories=>105, :protein=>1, :carbohydrate=>27, :total_sugar=>14, :total_dietary_fibre=>2.1, :calcium=>6, :iron=>0.3, :sodium=>1, :potassium=>422, :vitamin_a=>4, :vitamin_c=>10, :vitamin_b12=>0 }
   },
   {
     name: "Blueberries", months: ["July", "August", "September"],
@@ -612,7 +618,7 @@ class Product
       "Saskatchewan" => 0
     }, 
     context: "fruit",
-    nutrition: {"Food name"=>"Blueberries, raw", "Measure"=>"125mL", "Weight "=>"77", "Energy"=>"44", "Protein"=>"1", "Carbohydrate"=>"11", "Total Sugar"=>"8", "Total Dietary Fibre"=>"2", "Calcium"=>"5", "Iron"=>"0.2", "Sodium"=>"1", "Potassium"=>"59", "Vitamin A"=>"2", "Vitamin C"=>"7", "Vitamin B12"=>"0"}
+    nutrition: {:weight=>77, :calories=>44, :protein=>1, :carbohydrate=>11, :total_sugar=>8, :total_dietary_fibre=>2, :calcium=>5, :iron=>0.2, :sodium=>1, :potassium=>59, :vitamin_a=>2, :vitamin_c=>7, :vitamin_b12=>0 }
   },
   {
     name: "Cantaloupe", months: ["June", "July", "August", "September"],
@@ -628,7 +634,7 @@ class Product
       "Quebec" => 35.1,
       "Saskatchewan" => 0
     }, context: "fruit",
-    nutrition: {"Food name"=>"Melon, cantaloupe, cubes", "Measure"=>"125mL", "Weight "=>"85", "Energy"=>"29", "Protein"=>"1", "Carbohydrate"=>"7", "Total Sugar"=>"7", "Total Dietary Fibre"=>"0.6", "Calcium"=>"8", "Iron"=>"0.2", "Sodium"=>"14", "Potassium"=>"226", "Vitamin A"=>"143", "Vitamin C"=>"31", "Vitamin B12"=>"0"}
+    nutrition: {:measure=>"125mL", :weight=>85, :calories=>29, :protein=>1, :carbohydrate=>7, :total_sugar=>7, :total_dietary_fibre=>0.6, :calcium=>8, :iron=>0.2, :sodium=>14, :potassium=>226, :vitamin_a=>143, :vitamin_c=>31, :vitamin_b12=>0}
   },
   {
     name: "Cherries", months: ["June", "July"],
@@ -636,7 +642,7 @@ class Product
       "New Brunswick" => 0, "Newfoundland and Labrador" => 0, "Nova Scotia" => 0, 
       "Ontario" => 24.6, "Prince Edward Island" => 0, "Quebec" => 0, "Saskatchewan" => 0.2}, 
       context: "fruit",
-      nutrition: {"Food name"=>"Cherries, sweet", "Measure"=>"10", "Weight "=>"68", "Energy"=>"43", "Protein"=>"1", "Carbohydrate"=>"11", "Total Sugar"=>"9", "Total Dietary Fibre"=>"1.4", "Calcium"=>"9", "Iron"=>"0.2", "Sodium"=>"0", "Potassium"=>"151", "Vitamin A"=>"2", "Vitamin C"=>"5", "Vitamin B12"=>"0"}
+      nutrition: {:measure=>"60mL", :weight=>31, :calories=>95, :protein=>"tr", :carbohydrate=>25, :total_sugar=>20, :total_dietary_fibre=>1.8, :calcium=>3, :iron=>0.2, :sodium=>1, :potassium=>12, :vitamin_a=>0, :vitamin_c=>"tr", :vitamin_b12=>0 }
 
   },
   {
@@ -645,7 +651,7 @@ class Product
       "New Brunswick" => 0, "Newfoundland and Labrador" => 0.2, "Nova Scotia" => 0, 
       "Ontario" => 0, "Prince Edward Island" => 0, "Quebec" => 68.3, "Saskatchewan" => 0}, 
       context: "fruit",
-      nutrition: {"Food name"=>"Cranberries, dried, sweetened", "Measure"=>"60mL", "Weight "=>"31", "Energy"=>"95", "Protein"=>"tr", "Carbohydrate"=>"25", "Total Sugar"=>"20", "Total Dietary Fibre"=>"1.8", "Calcium"=>"3", "Iron"=>"0.2", "Sodium"=>"1", "Potassium"=>"12", "Vitamin A"=>"0", "Vitamin C"=>"tr", "Vitamin B12"=>"0"}
+      nutrition: {:measure=>"60mL", :weight=>31, :calories=>95, :protein=>"tr", :carbohydrate=>25, :total_sugar=>20, :total_dietary_fibre=>1.8, :calcium=>3, :iron=>0.2, :sodium=>1, :potassium=>12, :vitamin_a=>0, :vitamin_c=>"tr", :vitamin_b12=>0}
   },
   {
     name: "Grapefruit", months: ["January", "February", "March", "April", "May", "June"],
@@ -653,7 +659,7 @@ class Product
       "New Brunswick" => 0, "Newfoundland and Labrador" => 0, "Nova Scotia" => 0, 
       "Ontario" => 0, "Prince Edward Island" => 0, "Quebec" => 0, "Saskatchewan" => 0}, 
       context: "fruit",
-      nutrition: {"Food name"=>"Grapefruit, pink or red", "Measure"=>"  1/2 ", "Weight "=>"123", "Energy"=>"52", "Protein"=>"1", "Carbohydrate"=>"13", "Total Sugar"=>"8", "Total Dietary Fibre"=>"2", "Calcium"=>"27", "Iron"=>"0.1", "Sodium"=>"0", "Potassium"=>"166", "Vitamin A"=>"71", "Vitamin C"=>"38", "Vitamin B12"=>"0"}
+      nutrition: {:measure=>"  1/2 ", :weight=>123, :calories=>52, :protein=>1, :carbohydrate=>13, :total_sugar=>8, :total_dietary_fibre=>2, :calcium=>27, :iron=>0.1, :sodium=>0, :potassium=>166, :vitamin_a=>71, :vitamin_c=>38, :vitamin_b12=>0 }
   },
   {
     name: "Grapes", months: ["August", "September"],
@@ -661,25 +667,27 @@ class Product
       "New Brunswick" => 0, "Newfoundland and Labrador" => 0, "Nova Scotia" => 0, 
       "Ontario" => 63.4, "Prince Edward Island" => 0, "Quebec" => 2.2, "Saskatchewan" => 0}, 
       context: "fruit",
-      nutrition: {"Food name"=>"Grapes", "Measure"=>"20", "Weight "=>"100", "Energy"=>"69", "Protein"=>"1", "Carbohydrate"=>"18", "Total Sugar"=>"15", "Total Dietary Fibre"=>"1.2", "Calcium"=>"10", "Iron"=>"0.4", "Sodium"=>"2", "Potassium"=>"191", "Vitamin A"=>"3", "Vitamin C"=>"11", "Vitamin B12"=>"0"}
+      nutrition: { :measure=>20, :weight=>100, :calories=>69, :protein=>1, :carbohydrate=>18, :total_sugar=>15, :total_dietary_fibre=>1.2, :calcium=>10, :iron=>0.4, :sodium=>2, :potassium=>191, :vitamin_a=>3, :vitamin_c=>11, :vitamin_b12=>0 }
   },
   {
     name: "Kiwi", months: ["January", "February", "March", "April", "May", "October", "November", "December"],
     provinces: {"Alberta" => 0, "British Columbia" => 0, "Manitoba" => 0, 
       "New Brunswick" => 0, "Newfoundland and Labrador" => 0, "Nova Scotia" => 0, 
-      "Ontario" => 0, "Prince Edward Island" => 0, "Quebec" => 0, "Saskatchewan" => 0}, context: "fruit"
+      "Ontario" => 0, "Prince Edward Island" => 0, "Quebec" => 0, "Saskatchewan" => 0}, context: "fruit",
+      nutrition: {:measure=>1, :weight=>76, :calories=>46, :protein=>1, :carbohydrate=>11, :total_sugar=>7, :total_dietary_fibre=>2.3, :calcium=>26, :iron=>0.2, :sodium=>2, :potassium=>237, :vitamin_a=>3, :vitamin_c=>69, :vitamin_b12=>0 }
   },
   {
     name: "Lemons", months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
     provinces: {"Alberta" => 0, "British Columbia" => 0, "Manitoba" => 0, 
       "New Brunswick" => 0, "Newfoundland and Labrador" => 0, "Nova Scotia" => 0, 
-      "Ontario" => 0, "Prince Edward Island" => 0, "Quebec" => 0, "Saskatchewan" => 0}, context: "fruit"
+      "Ontario" => 0, "Prince Edward Island" => 0, "Quebec" => 0, "Saskatchewan" => 0}, context: "fruit", nutrition: {  measure: "", weight: 0, calories: 0, protein: 0, carbohydrate: 0, total_suger: 0,total_dietary_fibre: 0, calcium: 0, sodium: 0, potassium: 0}
   },
   {
     name: "Mangoes", months: ["May", "June", "July", "August", "September"],
     provinces: {"Alberta" => 0, "British Columbia" => 0, "Manitoba" => 0, 
       "New Brunswick" => 0, "Newfoundland and Labrador" => 0, "Nova Scotia" => 0, 
-      "Ontario" => 0, "Prince Edward Island" => 0, "Quebec" => 0, "Saskatchewan" => 0}, context: "fruit"
+      "Ontario" => 0, "Prince Edward Island" => 0, "Quebec" => 0, "Saskatchewan" => 0}, context: "fruit",
+      nutrition:  { measure: 0.5, weight: 104, calories: 67, protein: 1, carbohydrate: 18, total_sugar: 15, total_dietary_fibre: 1.9, calcium: 10, sodium: 2, potassium: 161}
   },
   {
     name: "Nectarines", months: ["August", "September"],
@@ -687,7 +695,7 @@ class Product
       "New Brunswick" => 0, "Newfoundland and Labrador" => 0, "Nova Scotia" => 0, 
       "Ontario" => 68.4, "Prince Edward Island" => 0, "Quebec" => 0, "Saskatchewan" => 0}, 
       context: "fruit",
-      nutrition: {"Food name"=>"Nectarine", "Measure"=>"1", "Weight "=>"136", "Energy"=>"60", "Protein"=>"1", "Carbohydrate"=>"14", "Total Sugar"=>"11", "Total Dietary Fibre"=>"2.3", "Calcium"=>"8", "Iron"=>"0.4", "Sodium"=>"0", "Potassium"=>"273", "Vitamin A"=>"18", "Vitamin C"=>"7", "Vitamin B12"=>"0"}
+      nutrition: {:measure=>1, :weight=>136, :calories=>60, :protein=>1, :carbohydrate=>14, :total_sugar=>11, :total_dietary_fibre=>2.3, :calcium=>8, :iron=>0.4, :sodium=>0, :potassium=>273, :vitamin_a=>18, :vitamin_c=>7, :vitamin_b12=>0}
   },
   {
     name: "Oranges", months: ["January", "February", "March", "April", "May", "June", "November", "December"],
@@ -695,13 +703,14 @@ class Product
       "New Brunswick" => 0, "Newfoundland and Labrador" => 0, "Nova Scotia" => 0, 
       "Ontario" => 0, "Prince Edward Island" => 0, "Quebec" => 0, "Saskatchewan" => 0}, 
       context: "fruit",
-      nutrition: {"Food name"=>"Orange", "Measure"=>"1", "Weight "=>"131", "Energy"=>"62", "Protein"=>"1", "Carbohydrate"=>"15", "Total Sugar"=>"12", "Total Dietary Fibre"=>"2.3", "Calcium"=>"52", "Iron"=>"0.1", "Sodium"=>"0", "Potassium"=>"237", "Vitamin A"=>"8", "Vitamin C"=>"70", "Vitamin B12"=>"0"}
+      nutrition: {:measure=>1, :weight=>131, :calories=>62, :protein=>1, :carbohydrate=>15, :total_sugar=>12, :total_dietary_fibre=>2.3, :calcium=>52, :iron=>0.1, :sodium=>0, :potassium=>237, :vitamin_a=>8, :vitamin_c=>70, :vitamin_b12=>0}
   },
   {
     name: "Papayas", months: ["June", "July", "August", "September"],
     provinces: {"Alberta" => 0, "British Columbia" => 0, "Manitoba" => 0, 
       "New Brunswick" => 0, "Newfoundland and Labrador" => 0, "Nova Scotia" => 0, 
-      "Ontario" => 0, "Prince Edward Island" => 0, "Quebec" => 0, "Saskatchewan" => 0}, context: "fruit"
+      "Ontario" => 0, "Prince Edward Island" => 0, "Quebec" => 0, "Saskatchewan" => 0}, context: "fruit", 
+      nutrition: { :measure=>"125mL", :weight=>74, :calories=>29, :protein=>"tr", :carbohydrate=>7, :total_sugar=>4, :total_dietary_fibre=>1.3, :calcium=>18, :iron=>0.1, :sodium=>2, :potassium=>190, :vitamin_a=>17, :vitamin_c=>46, :vitamin_b12=>0}
   },
   {
     name: "Peaches", months: ["July", "August", "September"],
@@ -709,7 +718,7 @@ class Product
       "New Brunswick" => 0, "Newfoundland and Labrador" => 0, "Nova Scotia" => 0.7, 
       "Ontario" => 72, "Prince Edward Island" => 0, "Quebec" => 0, "Saskatchewan" => 0}, 
       context: "fruit",
-      nutrition: {"Food name"=>"Peach", "Measure"=>"1", "Weight "=>"98", "Energy"=>"38", "Protein"=>"1", "Carbohydrate"=>"9", "Total Sugar"=>"8", "Total Dietary Fibre"=>"1.9", "Calcium"=>"6", "Iron"=>"0.2", "Sodium"=>"0", "Potassium"=>"186", "Vitamin A"=>"16", "Vitamin C"=>"6", "Vitamin B12"=>"0"}
+      nutrition: {:measure=>1, :weight=>98, :calories=>38, :protein=>1, :carbohydrate=>9, :total_sugar=>8, :total_dietary_fibre=>1.9, :calcium=>6, :iron=>0.2, :sodium=>0, :potassium=>186, :vitamin_a=>16, :vitamin_c=>6, :vitamin_b12=>0}
   },
   {
     name: "Pears", months: ["August", "September", "October", "November", "December"],
@@ -717,7 +726,7 @@ class Product
       "New Brunswick" => 0, "Newfoundland and Labrador" => 0, "Nova Scotia" => 3.3, 
       "Ontario" => 35.3, "Prince Edward Island" => 0, "Quebec" => 1.2, "Saskatchewan" => 0}, 
       context: "fruit",
-      nutrition: {"Food name"=>"Pear with skin", "Measure"=>"1", "Weight "=>"166", "Energy"=>"96", "Protein"=>"1", "Carbohydrate"=>"26", "Total Sugar"=>"16", "Total Dietary Fibre"=>"5", "Calcium"=>"15", "Iron"=>"0.3", "Sodium"=>"2", "Potassium"=>"198", "Vitamin A"=>"2", "Vitamin C"=>"7", "Vitamin B12"=>"0"}
+      nutrition: {:measure=>1, :weight=>166, :calories=>96, :protein=>1, :carbohydrate=>26, :total_sugar=>16, :total_dietary_fibre=>5, :calcium=>15, :iron=>0.3, :sodium=>2, :potassium=>198, :vitamin_a=>2, :vitamin_c=>7, :vitamin_b12=>0}
   },
   {
     name: "Pineapple", months: ["March", "April", "May", "June", "July"],
@@ -725,7 +734,7 @@ class Product
       "New Brunswick" => 0, "Newfoundland and Labrador" => 0, "Nova Scotia" => 0, 
       "Ontario" => 0, "Prince Edward Island" => 0, "Quebec" => 0, "Saskatchewan" => 0}, 
       context: "fruit",
-      nutrition: {"Food name"=>"Pineapple, cubes", "Measure"=>" 125mL", "Weight "=>"82", "Energy"=>"42", "Protein"=>"tr", "Carbohydrate"=>"11", "Total Sugar"=>"8", "Total Dietary Fibre"=>"1.1", "Calcium"=>"11", "Iron"=>"0.2", "Sodium"=>"1", "Potassium"=>"88", "Vitamin A"=>"2", "Vitamin C"=>"46", "Vitamin B12"=>"0"}
+      nutrition: {:measure=>" 125mL", :weight=>82, :calories=>42, :protein=>"tr", :carbohydrate=>11, :total_sugar=>8, :total_dietary_fibre=>1.1, :calcium=>11, :iron=>0.2, :sodium=>1, :potassium=>88, :vitamin_a=>2, :vitamin_c=>46, :vitamin_b12=>0}
   },
   {
     name: "Plums", months: ["July", "August", "September", "October"],
@@ -733,7 +742,7 @@ class Product
       "New Brunswick" => 0, "Newfoundland and Labrador" => 0, "Nova Scotia" => 0.7, 
       "Ontario" => 49.2, "Prince Edward Island" => 0, "Quebec" => 0, "Saskatchewan" => 0}, 
       context: "fruit",
-      nutrition: {"Food name"=>"Plum", "Measure"=>"1", "Weight "=>"66", "Energy"=>"30", "Protein"=>"tr", "Carbohydrate"=>"8", "Total Sugar"=>"7", "Total Dietary Fibre"=>"1.1", "Calcium"=>"4", "Iron"=>"0.1", "Sodium"=>"0", "Potassium"=>"104", "Vitamin A"=>"11", "Vitamin C"=>"6", "Vitamin B12"=>"0"}
+      nutrition: {:measure=>1, :weight=>66, :calories=>30, :protein=>"tr", :carbohydrate=>8, :total_sugar=>7, :total_dietary_fibre=>1.1, :calcium=>4, :iron=>0.1, :sodium=>0, :potassium=>104, :vitamin_a=>11, :vitamin_c=>6, :vitamin_b12=>0}
   },
   {
     name: "Pomegranates", months: ["January", "October", "November", "December"],
@@ -741,7 +750,7 @@ class Product
       "New Brunswick" => 0, "Newfoundland and Labrador" => 0, "Nova Scotia" => 0, 
       "Ontario" => 0, "Prince Edward Island" => 0, "Quebec" => 0, "Saskatchewan" => 0}, 
       context: "fruit",
-      nutrition: {"Food name"=>"Pomegranate (9.5cm diam)", "Measure"=>"  1/2 ", "Weight "=>"77", "Energy"=>"53", "Protein"=>"1", "Carbohydrate"=>"13", "Total Sugar"=>"13", "Total Dietary Fibre"=>"0.5", "Calcium"=>"2", "Iron"=>"0.2", "Sodium"=>"2", "Potassium"=>"200", "Vitamin A"=>"2", "Vitamin C"=>"5", "Vitamin B12"=>"0"}
+      nutrition: {:measure=>"  1/2 ", :weight=>77, :calories=>53, :protein=>1, :carbohydrate=>13, :total_sugar=>13, :total_dietary_fibre=>0.5, :calcium=>2, :iron=>0.2, :sodium=>2, :potassium=>200, :vitamin_a=>2, :vitamin_c=>5, :vitamin_b12=>0}
   },
   {
     name: "Raspberries", months: ["July", "August", "September"],
@@ -749,7 +758,7 @@ class Product
       "New Brunswick" => 0, "Newfoundland and Labrador" => 0, "Nova Scotia" => 0, 
       "Ontario" => 4.7, "Prince Edward Island" => 0, "Quebec" => 8.4, "Saskatchewan" => 01}, 
       context: "fruit",
-      nutrition: {"Food name"=>"Raspberries", "Measure"=>"125mL", "Weight "=>"65", "Energy"=>"34", "Protein"=>"1", "Carbohydrate"=>"8", "Total Sugar"=>"3", "Total Dietary Fibre"=>"4.2", "Calcium"=>"16", "Iron"=>"0.4", "Sodium"=>"1", "Potassium"=>"98", "Vitamin A"=>"1", "Vitamin C"=>"17", "Vitamin B12"=>"0"}
+      nutrition: {:measure=>"125mL", :weight=>65, :calories=>34, :protein=>1, :carbohydrate=>8, :total_sugar=>3, :total_dietary_fibre=>4.2, :calcium=>16, :iron=>0.4, :sodium=>1, :potassium=>98, :vitamin_a=>1, :vitamin_c=>17, :vitamin_b12=>0}
   },
   {
     name: "Rhubard", months: ["January", "February", "March", "April", "May", "June"],
@@ -765,7 +774,7 @@ class Product
       "Quebec" => 0,
       "Saskatchewan" => 0
     }, context: "fruit",
-    nutrition: {"Food name"=>"Rhubarb, frozen, cooked, with added sugar", "Measure"=>"125mL", "Weight "=>"127", "Energy"=>"147", "Protein"=>"tr", "Carbohydrate"=>"40", "Total Sugar"=>"36", "Total Dietary Fibre"=>"2.5", "Calcium"=>"184", "Iron"=>"0.3", "Sodium"=>"1", "Potassium"=>"122", "Vitamin A"=>"5", "Vitamin C"=>"4", "Vitamin B12"=>"0"}
+    nutrition: {:measure=>"125mL", :weight=>127, :calories=>147, :protein=>"tr", :carbohydrate=>40, :total_sugar=>36, :total_dietary_fibre=>2.5, :calcium=>184, :iron=>0.3, :sodium=>1, :potassium=>122, :vitamin_a=>5, :vitamin_c=>4, :vitamin_b12=>0}
   },
   {
     name: "Strawberries", months: ["June", "July"],
@@ -773,7 +782,7 @@ class Product
       "New Brunswick" => 2.3, "Newfoundland and Labrador" => 0.3, "Nova Scotia" => 10, 
       "Ontario" => 26.1, "Prince Edward Island" => 0.8, "Quebec" => 50.1, "Saskatchewan" => 0}, 
       context: "fruit",
-      nutrition: {"Food name"=>"Strawberries", "Measure"=>"7", "Weight "=>"84", "Energy"=>"27", "Protein"=>"1", "Carbohydrate"=>"6", "Total Sugar"=>"4", "Total Dietary Fibre"=>"1.9", "Calcium"=>"13", "Iron"=>"0.4", "Sodium"=>"1", "Potassium"=>"129", "Vitamin A"=>"1", "Vitamin C"=>"49", "Vitamin B12"=>"0"}
+      nutrition: {:measure=>7, :weight=>84, :calories=>27, :protein=>1, :carbohydrate=>6, :total_sugar=>4, :total_dietary_fibre=>1.9, :calcium=>13, :iron=>0.4, :sodium=>1, :potassium=>129, :vitamin_a=>1, :vitamin_c=>49, :vitamin_b12=>0}
   },
   {
     name: "Tangerines", months: ["January", "February", "March", "April", "May"],
@@ -781,7 +790,7 @@ class Product
       "New Brunswick" => 0, "Newfoundland and Labrador" => 0, "Nova Scotia" => 0, 
       "Ontario" => 0, "Prince Edward Island" => 0, "Quebec" => 0, "Saskatchewan" => 0}, 
       context: "fruit",
-      nutrition: {"Food name"=>"Tangerine (mandarin)", "Measure"=>"1", "Weight "=>"84", "Energy"=>"45", "Protein"=>"1", "Carbohydrate"=>"11", "Total Sugar"=>"9", "Total Dietary Fibre"=>"1.5", "Calcium"=>"31", "Iron"=>"0.1", "Sodium"=>"2", "Potassium"=>"139", "Vitamin A"=>"11", "Vitamin C"=>"22", "Vitamin B12"=>"0"}
+      nutrition: {:measure=>1, :weight=>84, :calories=>45, :protein=>1, :carbohydrate=>11, :total_sugar=>9, :total_dietary_fibre=>1.5, :calcium=>31, :iron=>0.1, :sodium=>2, :potassium=>139, :vitamin_a=>11, :vitamin_c=>22, :vitamin_b12=>0}
   },
   {
     name: "Watermelon", months: ["July", "August", "September"],
@@ -798,13 +807,14 @@ class Product
       "Saskatchewan" => 0
     }, 
     context: "fruit",
-    nutrition: {"Food name"=>"Melon, watermelon, cubes", "Measure"=>"125mL", "Weight "=>"80", "Energy"=>"24", "Protein"=>"tr", "Carbohydrate"=>"6", "Total Sugar"=>"5", "Total Dietary Fibre"=>"0.3", "Calcium"=>"6", "Iron"=>"0.2", "Sodium"=>"1", "Potassium"=>"90", "Vitamin A"=>"22", "Vitamin C"=>"7", "Vitamin B12"=>"0"}
+    nutrition: {:measure=>"125mL", :weight=>80, :calories=>24, :protein=>"tr", :carbohydrate=>6, :total_sugar=>5, :total_dietary_fibre=>0.3, :calcium=>6, :iron=>0.2, :sodium=>1, :potassium=>90, :vitamin_a=>22, :vitamin_c=>7, :vitamin_b12=>0 }
   },
   {
     name: "Saskatoon berries", months: ["July"],
     provinces: {"Alberta" => 45.6, "British Columbia" => 0, "Manitoba" => 5.5, 
       "New Brunswick" => 0, "Newfoundland and Labrador" => 0, "Nova Scotia" => 0, 
-      "Ontario" => 0, "Prince Edward Island" => 0, "Quebec" => 0, "Saskatchewan" => 39.6}, context: "fruit"
+      "Ontario" => 0, "Prince Edward Island" => 0, "Quebec" => 0, "Saskatchewan" => 39.6}, context: "fruit", 
+      nutrition: { :measure=>"", :weight=>0, :calories=>0, :protein=>"tr", :carbohydrate=>0, :total_sugar=>0, :total_dietary_fibre=>0, :calcium=>0, :iron=>0, :sodium=>0, :potassium=>0, :vitamin_a=>0, :vitamin_c=>0, :vitamin_b12=>0 }
   }
 ]
 end
