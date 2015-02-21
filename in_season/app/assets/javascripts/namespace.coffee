@@ -1,5 +1,5 @@
 window.App = {
   Views: {}
-  Model: {}
-  Collection: {}
+  Models: {}
+  Collections: {}
 }
