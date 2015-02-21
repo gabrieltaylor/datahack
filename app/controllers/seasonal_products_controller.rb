@@ -6,7 +6,8 @@ class SeasonalProductsController < ApplicationController
       @date = Date.today
       month = @date.strftime("%B")
     end
-    @products = Product.harvested_in(month: month)
+    province = params[:province]
+    @products = Product.harvested_in(month: month, province: province)
     render json: @products
   end
 end
