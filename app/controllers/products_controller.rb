@@ -9,4 +9,9 @@ class ProductsController < ApplicationController
     end
     render json: @products
   end
+
+  def show
+    @product = Product.find params[:id]
+    render json: @product
+  end
 end
