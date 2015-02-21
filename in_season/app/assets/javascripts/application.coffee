@@ -26,29 +26,43 @@ window.addEventListener 'load', =>
 class App.Controller extends Backbone.Router
 
   initialize: (options = {}) ->
-    document.addEventListener 'deviceready', @_on_device_ready, false
-
+    @province = localStorage.getItem('province')
 
     @on_client = options.on_client
     @server_url = options.server_url || "http://localhost:5000"
-    @_render_frame()
-    @load_resources =>
-      Backbone.history.start()
 
-  load_resources : (success_callback) ->
-    console.log "Loading Resoruces...needed"
-    success_callback()
+    @$content_area = $('#content-area')
 
-  _render_frame: ->
-    @frame = new App.Views.Frame
-    @$content_area  = $('.content-area')
+
+    Backbone.history.start()
+
 
   routes:
-    "" : "seasonal_products"
+    "" : "location"
+    "test" : "test"
+    'seasonal-products': "seasonal_products"
+    'seasonal-products/:id': "show_product_details"
+
+
+  location: ->
+    if @province
+
+      @navigate 'seasonal-products', trigger: true, replace: true
+
+    else
+      new App.Views.LocationLoadingView app: @
 
   seasonal_products: ->
+    @_render_frame()
     new App.Views.SeasonalProducts app: this
 
+  show_product_details: (id) ->
+    @_render_frame()
+    new App.Views.ProductDetials app: this
+
+
+  _render_frame: ->
+    @frame = new App.Views.Frame app: this
 
 
 
@@ -82,26 +96,6 @@ class App.Controller extends Backbone.Router
 
 
 
-  _on_device_ready: =>
-    navigator.geolocation.getCurrentPosition @geolocation_success
 
-  geolocation_success: (position) =>
-    lat = position.coords.latitude
-    long = position.coords.longitude
-    @get_addres_from lat, long
-
-  get_addres_from: (lat, long) =>
-    geocoder = new google.maps.Geocoder()
-    latlng = new (google.maps.LatLng)(lat, long)
-    geocoder.geocode { 'latLng': latlng }, (results, status) ->
-      if status == google.maps.GeocoderStatus.OK
-        console.log results
-        if results[1]
-          province = results[0].address_components[5].long_name
-          alert 'You are in ' + province
-        else
-          alert 'No results found'
-      else
-        alert 'Geocoder failed due to: ' + status
 
 
