@@ -71,11 +71,11 @@ fruits = [
 ]
 
 vegetables.each do |veg|
-  Product.create(name: veg["name"], context: "vegetable")
+  Product.create(name: veg[:name], context: "vegetable")
 end
 
 fruits.each do |fruit|
-  Product.create(name: fruit["name"], context: "fruit")
+  Product.create(name: fruit[:name], context: "fruit")
 end
 
 provinces = [ "Alberta", "British Columbia", "Manitoba", "New Brunswick", "Newfoundland and Labrador", "Nova Scotia", "Ontario", "Prince Edward Island", "Quebec", "Saskatchewan"]
