@@ -6,11 +6,11 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+# months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
-months.each do |month|
-  Month.create(name: month)
-end
+# months.each do |month|
+#   Month.create(name: month)
+# end
 
 
 vegetables = [
@@ -70,16 +70,38 @@ fruits = [
   {name: "Watermelon", months: ["July", "August", "September"]}
 ]
 
+# vegetables.each do |veg|
+#   Product.create(name: veg[:name], context: "vegetable")
+# end
+
+# fruits.each do |fruit|
+#   Product.create(name: fruit[:name], context: "fruit")
+# end
+
+# provinces = [ "Alberta", "British Columbia", "Manitoba", "New Brunswick", "Newfoundland and Labrador", "Nova Scotia", "Ontario", "Prince Edward Island", "Quebec", "Saskatchewan"]
+
+# provinces.each do |province|
+#   Province.create(name: province)
+# end
+
 vegetables.each do |veg|
-  Product.create(name: veg[:name], context: "vegetable")
+  v = Product.where(name: veg[:name]).first
+  provinces = Province.all
+  provinces.each do |province|
+    veg[:months].each do |month|
+      m = Month.where(name: month).first
+      LocalSeasonalProduct.create(month: m, province: province, product: v)
+    end
+  end
 end
 
-fruits.each do |fruit|
-  Product.create(name: fruit[:name], context: "fruit")
-end
-
-provinces = [ "Alberta", "British Columbia", "Manitoba", "New Brunswick", "Newfoundland and Labrador", "Nova Scotia", "Ontario", "Prince Edward Island", "Quebec", "Saskatchewan"]
-
-provinces.each do |province|
-  Province.create(name: province)
+fruits.each do |veg|
+  v = Product.where(name: veg[:name]).first
+  provinces = Province.all
+  provinces.each do |province|
+    veg[:months].each do |month|
+      m = Month.where(name: month).first
+      LocalSeasonalProduct.create(month: m, province: province, product: v)
+    end
+  end
 end
