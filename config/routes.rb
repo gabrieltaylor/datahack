@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
   root to: 'high_voltage/pages#show', id: 'home'
-  resources :products
-  resources :months
-  resources :provinces
+  get 'seasonal-products' => 'seasonal_products#index', :as => 'seasonal_products'
 end
