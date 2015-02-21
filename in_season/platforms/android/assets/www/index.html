@@ -29,31 +29,12 @@
         <title>Hello World</title>
     </head>
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-
-        <h1>Hello, World!</h1>
-
-        <button>Test</button>
-        <div class="row">
-          <div class="small-3 columns">Hello</div>
-          <div class="small-3 columns">Testing</div>
-          <div class="small-3 columns">Grid</div>
-          <div class="small-3 columns"> Ya!</div>
-        </div>
-
-
-
         <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
          <script type="text/javascript" src="assets/application.js">
          </script>
         <script type="text/javascript">
-
+            app = new App.Controller();
         </script>
     </body>
 </html>

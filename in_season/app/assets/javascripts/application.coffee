@@ -41,15 +41,53 @@ class App.Controller extends Backbone.Router
     @$content_area  = $('.content-area')
 
   routes:
-    "" : "seasonal_products"
+    "" : "location"
     'seasonal-products': "seasonal_products"
     'seasonal-products/:id': "show_product_details"
+
+  location: ->
+    @province = localStorage.getItem('province')
+    if @province
+      @navigate 'seasonal_products', tigger: true
+    else
+      new App.Views.LocationLoadingView app: @
+
 
   seasonal_products: ->
     new App.Views.SeasonalProducts app: this
 
   show_product_details:(id) ->
     new App.Views.ProductDetials {app: this}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

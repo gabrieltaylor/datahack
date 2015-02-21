@@ -30,10 +30,11 @@
     </head>
     <body>
         <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
          <script type="text/javascript" src="assets/application.js">
          </script>
         <script type="text/javascript">
-            app.initialize();
+            app = new App.Controller();
         </script>
     </body>
 </html>
