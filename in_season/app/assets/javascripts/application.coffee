@@ -46,7 +46,9 @@ class App.Controller extends Backbone.Router
 
   location: ->
     if @province
+
       @navigate 'seasonal-products', trigger: true, replace: true
+
     else
       new App.Views.LocationLoadingView app: @
 
