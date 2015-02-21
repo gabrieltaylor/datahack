@@ -17,7 +17,7 @@ class Product
     all.select{ |p| p.context == "vegetable" }
   end
 
-  def self.available_in(month:)
+  def self.harvested_in(month:)
     all.select { |p| p.months.include?(month) }
   end
 

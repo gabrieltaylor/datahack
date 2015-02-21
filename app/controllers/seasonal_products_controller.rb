@@ -1,14 +1,12 @@
 class SeasonalProductsController < ApplicationController
-  def show
+  def index
     if params[:month]
       month = params[:month]
     else
       @date = Date.today
-      month_name = @date.strftime("%B")
+      month = @date.strftime("%B")
     end
-    @province = Province.find(params[:id])
-    @month = Month.where(name: month_name).first
-    @products = @province.local_seasonal_products.where(month: @month).collect(&:product)
+    @products = Product.harvested_in(month: month)
     render json: @products
   end
 end
