@@ -44,10 +44,10 @@ class App.Controller extends Backbone.Router
     @$content_area  = $('.content-area')
 
   routes:
-    "" : "in_season"
+    "" : "seasonal_products"
 
-  in_season: ->
-    new App.Views.InSeason app: this
+  seasonal_products: ->
+    new App.Views.SeasonalProducts app: this
 
 
 
