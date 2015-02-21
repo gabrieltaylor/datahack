@@ -14,7 +14,7 @@ class App.Views.LocationLoadingView extends Backbone.View
     @$el.html @template()
 
   _position: ->
-    $('body').html @el
+    @app.$content_area.html @el
 
   _on_device_ready: ->
     navigator.geolocation.getCurrentPosition @geolocation_success
@@ -34,7 +34,7 @@ class App.Views.LocationLoadingView extends Backbone.View
           localStorage.setItem "province", province
           @app.province = localStorage.getItem('province')
 
-          @app.navigate "seasonal_products", trigger: true
+          @app.navigate "seasonal-products", trigger: true
         else
           alert 'No results found'
       else

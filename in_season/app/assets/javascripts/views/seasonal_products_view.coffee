@@ -18,7 +18,7 @@ class App.Views.SeasonalProducts extends Backbone.View
     @$products_lists = @$('.seasonal-products-list')
 
   _position: ->
-    @app.$content_area.html @el
+    @app.frame.content_area.html @el
 
   _render_products: ->
     @seasonal_products.each (product) =>
