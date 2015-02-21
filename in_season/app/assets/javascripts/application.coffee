@@ -48,7 +48,7 @@ class App.Controller extends Backbone.Router
   location: ->
     @province = localStorage.getItem('province')
     if @province
-      @navigate 'seasonal_products', tigger: true
+      @navigate 'seasonal-products', tigger: true
     else
       new App.Views.LocationLoadingView app: @
 
@@ -58,8 +58,6 @@ class App.Controller extends Backbone.Router
 
   show_product_details:(id) ->
     new App.Views.ProductDetials app: this
-
-
 
 
 
