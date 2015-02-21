@@ -26,6 +26,9 @@ window.addEventListener 'load', =>
 class App.Controller extends Backbone.Router
 
   initialize: (options = {}) ->
+    document.addEventListener 'deviceready', @_on_device_ready, false
+
+
     @on_client = options.on_client
     @server_url = options.server_url || "http://localhost:5000"
     @_render_frame()
@@ -50,5 +53,55 @@ class App.Controller extends Backbone.Router
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  _on_device_ready: =>
+    navigator.geolocation.getCurrentPosition @geolocation_success
+
+  geolocation_success: (position) =>
+    lat = position.coords.latitude
+    long = position.coords.longitude
+    @get_addres_from lat, long
+
+  get_addres_from: (lat, long) =>
+    geocoder = new google.maps.Geocoder()
+    latlng = new (google.maps.LatLng)(lat, long)
+    geocoder.geocode { 'latLng': latlng }, (results, status) ->
+      if status == google.maps.GeocoderStatus.OK
+        console.log results
+        if results[1]
+          province = results[0].address_components[5].long_name
+          alert 'You are in ' + province
+        else
+          alert 'No results found'
+      else
+        alert 'Geocoder failed due to: ' + status
 
 
