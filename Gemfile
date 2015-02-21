@@ -24,11 +24,15 @@ gem "simple_form"
 gem "title"
 gem "uglifier"
 gem "unicorn"
+gem 'in_season', path: 'in_season'
+gem 'ejs'
 
 group :development do
   gem "spring"
   gem "spring-commands-rspec"
   gem "web-console"
+  gem "better_errors"
+  gem "binding_of_caller"
 end
 
 group :development, :test do
