@@ -1,7 +1,7 @@
 class App.Views.SeasonalProducts extends Backbone.View
+
   template: JST['tpl/seasonal_products']
   className: 'seasonal-products'
-
 
   initialize: (options) ->
     @app = options.app
@@ -10,8 +10,6 @@ class App.Views.SeasonalProducts extends Backbone.View
       @_render()
       @_position()
       @_render_products()
-
-
 
   _render: ->
     @$el.html @template()
@@ -26,9 +24,4 @@ class App.Views.SeasonalProducts extends Backbone.View
 
   _fetch_resource: (callback) ->
     @seasonal_products  = new App.Collections.SeasonalProducts [{name: "Apple"}, {name: "Orange"}, {name: "Bananna"}]
-
-
-
     callback()
-
-
