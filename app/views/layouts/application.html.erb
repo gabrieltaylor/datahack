@@ -15,11 +15,13 @@
 </head>
 <body class="<%= body_class %>">
   <%= yield %>
+  <div id="content-area"></div>
   <%= render "javascript" %>
   <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
   <script type="text/javascript">
-    window._app  = new App.Controller({on_client: false})
+    window._app  = new App.Controller({on_client: false});
+
   </script>
 </body>
 </html>

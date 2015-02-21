@@ -39,6 +39,9 @@
 /Users/shirlaw/fun/datahack/in_season/platforms/android/assets/www/plugins \
 /Users/shirlaw/fun/datahack/in_season/platforms/android/assets/www/assets/application.css \
 /Users/shirlaw/fun/datahack/in_season/platforms/android/assets/www/assets/application.js \
+/Users/shirlaw/fun/datahack/in_season/platforms/android/assets/www/assets/icon_large.png \
+/Users/shirlaw/fun/datahack/in_season/platforms/android/assets/www/assets/icon_small.png \
+/Users/shirlaw/fun/datahack/in_season/platforms/android/assets/www/assets/peach_m.jpg \
 /Users/shirlaw/fun/datahack/in_season/platforms/android/assets/www/css/index.css \
 /Users/shirlaw/fun/datahack/in_season/platforms/android/assets/www/img/logo.png \
 /Users/shirlaw/fun/datahack/in_season/platforms/android/assets/www/js/index.js \
