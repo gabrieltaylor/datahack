@@ -1,3 +1,8 @@
+PATH
+  remote: in_season
+  specs:
+    in_season (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -279,6 +284,7 @@ DEPENDENCIES
   formulaic
   high_voltage
   i18n-tasks
+  in_season!
   jquery-rails
   launchy
   neat (~> 1.7.0)

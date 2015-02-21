@@ -24,6 +24,7 @@ gem "simple_form"
 gem "title"
 gem "uglifier"
 gem "unicorn"
+gem 'in_season', path: 'in_season'
 
 group :development do
   gem "spring"

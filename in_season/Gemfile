@@ -1,0 +1,7 @@
+source 'https://rubygems.org'
+
+# Specify your gem's dependencies in in_season.gemspec
+gemspec
+
+gem 'savanna', '~> 0.0.7'
+gem "normalize-rails", "~> 3.0.0"
