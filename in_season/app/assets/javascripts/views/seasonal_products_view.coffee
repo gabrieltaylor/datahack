@@ -15,14 +15,16 @@ class App.Views.SeasonalProducts extends Backbone.View
     @$el.html @template()
 
   _position: ->
-    @app.$content_area.append @el
+    @app.$content_area.html @el
 
   _render_products: ->
     @seasonal_products.each (product) =>
-      new App.Views.SeasonalProduct wrapper: @$el, model: product
+      new App.Views.SeasonalProduct wrapper: @$el, model: product, app: @app
 
   _fetch_resource: (callback) ->
-    @seasonal_products  = new App.Collections.SeasonalProducts {name: "Apple"}
+    console.log "Called"
+    @seasonal_products  = new App.Collections.SeasonalProducts [{name: "Apple"}, {name: "Orange"}, {name: "Bananna"}]
+
     callback()
 
 
