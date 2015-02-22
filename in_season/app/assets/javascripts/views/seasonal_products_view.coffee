@@ -5,7 +5,7 @@ class App.Views.SeasonalProducts extends Backbone.View
 
   initialize: (options) ->
     @app = options.app
-
+    console.log "init season"
     @_fetch_resource =>
       @_render()
       @_position()
@@ -43,6 +43,7 @@ class App.Views.SeasonalProducts extends Backbone.View
       if product.attributes.context is "seafood"
         new App.Views.SeasonalProduct wrapper: @$seafood_lists, model: product, app: @app
 
+    console.log "Render products"
   _fetch_resource: (callback) ->
     @seasonal_products  = @app.seasonal_products
 

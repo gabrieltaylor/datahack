@@ -53,6 +53,7 @@ class App.Controller extends Backbone.Router
 
   seasonal_products: ->
     # @_render_frame()
+    console.log "seasonal"
     new App.Views.SeasonalProducts app: this
 
   seasonal_product: (id) ->

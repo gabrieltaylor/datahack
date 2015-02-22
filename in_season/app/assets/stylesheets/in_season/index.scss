@@ -38,7 +38,11 @@
   margin-bottom: 0.5rem;
 }
 
-
+.sprout-icon{
+  background-image: url("../assets/sprout_icon.png");
+  height: 13px; width: 15px; background-repeat: no-repeat;
+  display: inline-block;
+}
 .nav-bar{
   height: 70px;
   background: white;
