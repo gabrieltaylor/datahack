@@ -1,13 +1,23 @@
-<div class="name">
-  <h1><%= name %></h1>
-  <div class="recipies button right">Recipies</div>
+<div class="nav">
+  <div class="back button left">
+    Back
+  </div>
+  <div class="recipies button right">Recipes</div>
 </div>
 
+<div class="name">
+  <h1><%= name %></h1>
+</div>
 
-<span data-tooltip aria-haspopup="true" class="percentage-tool-tip has-tip" title="Percentage grown in canada">Local Percentage: 20%</span>
+<div class="header production">
+  <h2>Production in Canada</h2>
+</div>
 
 <canvas id="production-chart" width="400" height="400"></canvas>
 
+<div class="header">
+  <h2>In Season</h2>
+</div>
 
 <canvas id="in-season-chart" width="400" height="400"></canvas>
 
@@ -17,14 +27,6 @@
 </div>
 
 <table>
-  <!-- <thead>
-    <tr>
-      <th width="200">Table Header</th>
-      <th>Table Header</th>
-      <th width="150">Table Header</th>
-      <th width="150">Table Header</th>
-    </tr>
-  </thead> -->
   <tbody>
     <tr>
       <td width="200">Serving Size</td>
