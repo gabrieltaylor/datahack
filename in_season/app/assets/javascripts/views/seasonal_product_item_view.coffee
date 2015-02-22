@@ -18,8 +18,9 @@ class App.Views.SeasonalProduct extends Backbone.View
 
   _render: ->
     @$el.html @template @model.toJSON()
+
     y = @model.local_rating @app.province
-    console.log y
+
     for x  in [0..y]
       @$('.icon-wrapper').append "<img class='sprout-icon' src='assets/sprout_icon.png'>" unless x is 0
 

@@ -14,7 +14,7 @@ class App.Views.RecipesView extends Backbone.View
       @_render()
       @_position()
       @_render_recipes()
-      @_init_masonry()
+
 
   events:
     'click .back' : 'back'
@@ -35,7 +35,7 @@ class App.Views.RecipesView extends Backbone.View
       new App.Views.RecipeView
         wrapper: @$recipes_lists, model: recipe, app: @app, parent: this
 
-
+    @_init_masonry()
 
   _get_recepies: (callback)->
     $.ajax
@@ -52,10 +52,14 @@ class App.Views.RecipesView extends Backbone.View
       complete: =>
         callback()
 
+
+
+
   load_more_recipes: ->
     @page += 1
     @_get_recepies =>
       @_render_recipes()
+
 
 
   _init_masonry: ->
