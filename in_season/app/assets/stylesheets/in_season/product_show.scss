@@ -1,14 +1,16 @@
+.button {
+  margin-bottom: 20px;
+  background-color: #017400;
+}
+
 .product-details {
-  margin-top: 20px;
   margin-bottom: 20px;
   padding: 0 20px;
 
   .nav {
+    margin-left: -20px;
+    margin-right: -20px;
     overflow: hidden;
-    .button {
-      margin-bottom: 20px;
-      background-color: #017400;
-    }
   }
 
 
