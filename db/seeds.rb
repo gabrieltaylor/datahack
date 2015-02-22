@@ -70,6 +70,17 @@ fruits = [
   {name: "Watermelon", months: ["July", "August", "September"], :measure=>"125mL", :weight=>80, :calories=>24, :protein=>"tr", :carbohydrate=>6, :total_sugar=>5, :total_dietary_fibre=>0.3, :calcium=>6, :iron=>0.2, :sodium=>1, :potassium=>90, :vitamin_a=>22, :vitamin_c=>7, :vitamin_b12=>0 }
 ]
 
+fish = [
+  {:name=>"Salmon", :measure=>"75g", :weight=>75, :calories=>113, :protein=>17, :carbohydrate=>1, :total_fat=>4, :saturated_fat=>nil, :cholesterol=>nil, :calcium=>45, :iron=>1.4, :sodium=>nil, :potassium=>nil, :vitamin_a=>72, :vitamin_d=>nil, :vitamin_b12=>nil, :vitamin_e=>nil}
+  {:name=>"Steelhead", :measure=>"75g", :weight=>75, :calories=>127, :protein=>18, :carbohydrate=>0, :total_fat=>5, :saturated_fat=>1.6, :cholesterol=>51, :calcium=>65, :iron=>0.2, :sodium=>32, :potassium=>331, :vitamin_a=>65, :vitamin_d=>4.8, :vitamin_b12=>3.73, :vitamin_e=>0}
+  {:name=>"Trout", :measure=>"75g", :weight=>75, :calories=>127, :protein=>18, :carbohydrate=>0, :total_fat=>5, :saturated_fat=>1.6, :cholesterol=>51, :calcium=>65, :iron=>0.2, :sodium=>32, :potassium=>331, :vitamin_a=>65, :vitamin_d=>4.8, :vitamin_b12=>3.73, :vitamin_e=>0}
+  {:name=>"Whitefish", :measure=>"75g", :weight=>75, :calories=>100, :protein=>17, :carbohydrate=>0, :total_fat=>3, :saturated_fat=>0.9, :cholesterol=>58, :calcium=>12, :iron=>0.3, :sodium=>33, :potassium=>294, :vitamin_a=>8, :vitamin_d=>11.3, :vitamin_b12=>0.72, :vitamin_e=>nil}
+  {:name=>"Clams", :measure=>"5 large", :weight=>60, :calories=>89, :protein=>15, :carbohydrate=>3, :total_fat=>1, :saturated_fat=>0.1, :cholesterol=>40, :calcium=>55, :iron=>16.8, :sodium=>67, :potassium=>377, :vitamin_a=>103, :vitamin_d=>0.1, :vitamin_b12=>59.33, :vitamin_e=>0.4}
+  {:name=>"Mussels", :measure=>"15 small", :weight=>75, :calories=>129, :protein=>18, :carbohydrate=>6, :total_fat=>3, :saturated_fat=>0.6, :cholesterol=>42, :calcium=>25, :iron=>5, :sodium=>277, :potassium=>201, :vitamin_a=>68, :vitamin_d=>0.2, :vitamin_b12=>18, :vitamin_e=>0.8}
+  {:name=>"Oysters", :measure=>"6 medium", :weight=>84, :calories=>50, :protein=>4, :carbohydrate=>5, :total_fat=>1, :saturated_fat=>0.4, :cholesterol=>21, :calcium=>37, :iron=>4.9, :sodium=>150, :potassium=>104, :vitamin_a=>7, :vitamin_d=>nil, :vitamin_b12=>13.61, :vitamin_e=>0.5}
+  {:name=>"Scallops", :measure=>"6 medium", :weight=>78, :calories=>87, :protein=>18, :carbohydrate=>0, :total_fat=>1, :saturated_fat=>0.1, :cholesterol=>41, :calcium=>90, :iron=>2.3, :sodium=>207, :potassium=>371, :vitamin_a=>23, :vitamin_d=>0, :vitamin_b12=>1.01, :vitamin_e=>1.2}
+]
+
 vegetables.each do |veg|
   Product.create(name: veg["name"], context: "vegetable")
 end
