@@ -41,16 +41,13 @@ class App.Controller extends Backbone.Router
 
   routes:
     "" : "location"
-    "test" : "test"
     'seasonal-products': "seasonal_products"
     'seasonal-products/:id': "show_product_details"
 
 
   location: ->
     if @province
-
       @navigate 'seasonal-products', trigger: true, replace: true
-
     else
       new App.Views.LocationLoadingView app: @
 
