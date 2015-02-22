@@ -41,6 +41,7 @@
 /Users/shirlaw/fun/datahack/in_season/platforms/android/assets/www/assets/application.js \
 /Users/shirlaw/fun/datahack/in_season/platforms/android/assets/www/assets/icon_large.png \
 /Users/shirlaw/fun/datahack/in_season/platforms/android/assets/www/assets/icon_small.png \
+/Users/shirlaw/fun/datahack/in_season/platforms/android/assets/www/assets/loading.png \
 /Users/shirlaw/fun/datahack/in_season/platforms/android/assets/www/assets/peach_m.jpg \
 /Users/shirlaw/fun/datahack/in_season/platforms/android/assets/www/css/index.css \
 /Users/shirlaw/fun/datahack/in_season/platforms/android/assets/www/img/logo.png \
