@@ -17,8 +17,49 @@
     }
   }
 }
+.no-bullets {
+  list-style-type: none;
+}
+
+.margin-sides-p5 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.margin-bottom-p5 {
+  margin-bottom: 0.5rem;
+}
+
+.recipes-lists{
+    -moz-column-count: 2;
+    -moz-column-gap: 0;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 0;
+    column-count: 2;
+    column-gap: 0;
+    width: 100%;
+    margin-bottom: 3rem;
+
+    a.recipe{
+        display: inline-block; /* Display inline-block, and absolutely NO FLOATS! */
+        margin-bottom: 1rem;
+        width: 100%;
+        position: relative;
+    }
+}
 
 
+.image-with-overlay { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+.image-overlay-text { 
+   position: absolute; 
+   top: 50px; 
+   left: 0; 
+   width: 100%; 
+}
 // .main-nav{
 //   height: 70px;
 //   background: #1abc9c;

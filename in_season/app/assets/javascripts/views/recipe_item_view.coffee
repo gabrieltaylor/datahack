@@ -1,8 +1,8 @@
 class App.Views.RecipeView extends Backbone.View
 
   template: JST['tpl/recipe_item']
-  className: 'recipe-item'
-  tagName: 'li'
+  className: 'recipe-item text-center'
+  tagName: 'a'
 
   initialize: (options) ->
     @app = options.app
