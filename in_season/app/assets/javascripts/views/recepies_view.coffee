@@ -38,20 +38,18 @@ class App.Views.RecipesView extends Backbone.View
         page: @page
       }
       dataType: 'json'
-
+      beforeSend: => @app.show_loading()
       success:(response) =>
         console.log response
         @recipes.reset response.recipes
-      error: (error) =>
-        console.log "Error"
+      error: (error) => console.log "Error"
       complete: =>
+        @app.hide_loading()
         callback()
 
   load_more_recipes: ->
-    alert "Loading more"
     @page += 1
     @_get_recepies =>
-      console.log "sucess fired"
       @_render_recipes()
 
 

@@ -1,21 +1,16 @@
 class App.Views.ProductDetials extends Backbone.View
-
   template: JST['tpl/product_details']
   className: 'product-details'
 
   initialize: (options) ->
+    @app = options.app
     @frame = options.frame
-
-    @_fetch_resource =>
-      @app = options.app
-      @$wrapper = options.wrapper
-      @_render()
-      @_position()
-
-
+    @_render()
+    @_position()
+    @_render_chart()
 
   events:
-    'click' : 'show_recepies'
+    'click .recipies' : 'show_recepies'
 
   show_recepies: ->
     @app.navigate "recipes/#{@model.get('name')}", trigger: true
@@ -26,9 +21,14 @@ class App.Views.ProductDetials extends Backbone.View
   _position: ->
     @app.frame.content_area.html @el
 
-  _fetch_resource: (callback) ->
-    @model = new Backbone.Model({name: "apricot", details: "some details here"})
-    callback()
+  _render_chart: ->
+    chart_data = @model.format_chart_data()
+    ctx = @$("#production-chart").get(0).getContext("2d")
+    new Chart(ctx).Doughnut(chart_data)
+
+
+
+
 
 
 
