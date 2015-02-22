@@ -1,11 +1,13 @@
 .loading-wrap {
   .loading {
     .loading-icon {
+      // JAMES: change me for build
+      // background-image: url("../assets/loading.png");
       background-image: image-url("loading.png");
       background-repeat: no-repeat;
       width: 164px;
       height: 105px;
-      margin: 0 auto;
+      margin: 5px auto;
     }
     .ellipsis {
       i {
@@ -37,4 +39,10 @@
     margin-left: -111px;
     font-size: 24px;
   }
+}
+
+.manual-select {
+  position: absolute;
+  top: 50%;
+  margin-top: -64px;
 }

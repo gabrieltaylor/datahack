@@ -1,34 +1,40 @@
 <div class="name">
   <h1><%= name %></h1>
-  <div class="button right">Recipies</div>
+  <div class="recipies button right">Recipies</div>
 </div>
 
 
 <span data-tooltip aria-haspopup="true" class="percentage-tool-tip has-tip" title="Percentage grown in canada">Local Percentage: 20%</span>
 
+<canvas id="production-chart" width="400" height="400"></canvas>
+
 <table>
-    <tr>
-      <th>Protein</th>
-      <td><%= nutrition["protein"] %></td>
-    </tr>
-    <tr>
-      <th>Calories</th>
-      <td><%= nutrition["calories"] %></td>
-    </tr>
-    <tr>
-      <th>Carbohydrates</th>
-      <td><%= nutrition["carbohydrates"] %></td>
-    </tr>
-    <tr>
-      <th>Total sugar</th>
-      <td><%= nutrition["total_sugar"] %></td>
-    </tr>
-    <tr>
-      <th>Total dietary fibre</th>
-      <td><%= nutrition["total_dietary_fibre"] %></td>
-    </tr>
+  <tr>
+    <th>Serving Size</th>
+    <td>
+      <%= nutrition['measure'] %> (<%= nutrition['weight']%>g)
+    </td>
+  </tr>
+  <tr>
+    <th>Protein</th>
+    <td><%= nutrition["protein"] %></td>
+  </tr>
+  <tr>
+    <th>Calories</th>
+    <td><%= nutrition["calories"] %></td>
+  </tr>
+  <tr>
+    <th>Carbohydrates</th>
+    <td><%= nutrition["carbohydrates"] %></td>
+  </tr>
+  <tr>
+    <th>Total sugar</th>
+    <td><%= nutrition["total_sugar"] %></td>
+  </tr>
+  <tr>
+    <th>Total dietary fibre</th>
+    <td><%= nutrition["total_dietary_fibre"] %></td>
+  </tr>
 </table>
 
 
-
-<!-- <div class="details"><%= details %></div> -->

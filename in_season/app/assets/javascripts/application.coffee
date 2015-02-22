@@ -1,4 +1,5 @@
 #= require ./namespace
+#= require chart_js
 #= require moment
 #= require jquery
 #= require jquery_ujs
@@ -32,14 +33,13 @@ class App.Controller extends Backbone.Router
     @on_client = options.on_client
     @server_url = options.server_url || "https://datahack-production.herokuapp.com"
     @$content_area = $('#content-area')
-
+    @seasonal_products = new App.Collections.SeasonalProducts
     Backbone.history.start()
 
 
   routes:
     "" : "location"
     'seasonal-products': "seasonal_products"
-    'seasonal-products/:id': "show_product_details"
     "recipes/:product_name" : "show_recipes"
 
   location: ->
@@ -52,45 +52,17 @@ class App.Controller extends Backbone.Router
     @_render_frame()
     new App.Views.SeasonalProducts app: this
 
-  show_product_details: (id) ->
-    @_render_frame()
-    new App.Views.ProductDetials app: this
-
   show_recipes: (product_name) ->
     new App.Views.RecipesView app: this, product_name: product_name
 
   _render_frame: ->
     @frame = new App.Views.Frame app: this
 
+  show_loading: ->
+    $('.application-loading').removeClass 'hide'
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  hide_loading: ->
+    $('.application-loading').addClass 'hide'
 
 
 
