@@ -22,7 +22,11 @@ class App.Views.ProductDetials extends Backbone.View
       @app.navigate 'seasonal-products', trigger: true
 
   events:
+    'click .back' : 'back'
     'click .recipies' : 'show_recepies'
+
+  back: ->
+    @app.navigate "seasonal-products", trigger: true
 
   show_recepies: ->
     @app.navigate "recipes/#{@model.get('name')}", trigger: true
@@ -41,6 +45,7 @@ class App.Views.ProductDetials extends Backbone.View
       ctx = @$("#production-chart").get(0).getContext("2d")
       new Chart(ctx).Doughnut(chart_data)
     else
+      @$('.production.header').remove()
       @$('#production-chart').remove()
 
   _render_in_season_chart: ->
