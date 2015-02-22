@@ -10,9 +10,24 @@
     .button {
       display: inline-block;
       margin-bottom: 20px;
+      background-color: #017400;
     }
     border-bottom: 1px #011101 solid;
     padding-bottom: 20px;
+  }
+
+  .header {
+    border-bottom: 1px #011101 solid;
+    margin: 20px;
+    h2 {
+      font-size: 30px; text-align: center;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+
+  table {
+    width: 100%;
   }
 
   .percentage-tool-tip {
