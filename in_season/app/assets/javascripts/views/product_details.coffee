@@ -5,10 +5,15 @@ class App.Views.ProductDetials extends Backbone.View
   initialize: (options) ->
     @app = options.app
     @frame = options.frame
-    @_render()
-    @_position()
-    @_render_production_chart()
-    @_render_in_season_chart()
+
+    if @app.seasonal_products.length
+      @model = @app.seasonal_products.get options.product_id
+      @_render()
+      @_position()
+      @_render_production_chart()
+      @_render_in_season_chart()
+    else
+      @app.navigate 'seasonal-products', trigger: true
 
   events:
     'click .recipies' : 'show_recepies'

@@ -13,7 +13,7 @@ class App.Views.SeasonalProduct extends Backbone.View
     'click' : "render_product_details"
 
   render_product_details: (e) ->
-    new App.Views.ProductDetials app: @app, model: @model
+    @app.navigate 'seasonal-products/' + @model.id, trigger: true
 
   _render: ->
     @$el.html @template @model.toJSON()
