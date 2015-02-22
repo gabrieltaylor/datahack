@@ -3,6 +3,7 @@ class App.Views.SeasonalProduct extends Backbone.View
   template: JST['tpl/seasonal_product_item']
   tagName: 'li'
 
+
   initialize: (options) ->
     @app = options.app
     @$wrapper = options.wrapper
@@ -17,6 +18,10 @@ class App.Views.SeasonalProduct extends Backbone.View
 
   _render: ->
     @$el.html @template @model.toJSON()
+    y = @model.local_rating()
+    console.log y
+    for x  in [0..y]
+      @$el.append "<img class='sprout-icon' src='assets/sprout_icon.png'>" unless x is 0
 
   _position: ->
     @$wrapper.append @el

@@ -6,12 +6,9 @@
   li {
     padding: 20px 10px;
     border-bottom: 1px #011101 solid;
-    .local {
-      float: right;
-      border: 1px #017400 solid;
-      font-size: 14px;
-      padding: 5px 10px;
-      border-radius: 5px;
+    .product-name {
+      font-size: 24px;
+      .icon-wrapper { font-size: 36px; float: right; padding-top: 10px;}
     }
     &:last-child {
       border-bottom: none;
