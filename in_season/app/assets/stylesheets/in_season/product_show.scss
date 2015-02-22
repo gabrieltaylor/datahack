@@ -10,14 +10,30 @@
     .button {
       display: inline-block;
       margin-bottom: 20px;
+      background-color: #017400;
     }
     border-bottom: 1px #011101 solid;
     padding-bottom: 20px;
+    margin-bottom: 20px;
   }
 
-  .percentage-tool-tip {
-    margin-top: 30px;
-    display: inline-block;
-    font-size: 20px;
+  .header {
+    border-bottom: 1px #011101 solid;
+    margin: 20px;
+    h2 {
+      font-size: 20px; text-align: center;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
   }
+
+  table {
+    width: 100%;
+  }
+
+  #production-chart, #in-season-chart {
+    margin: 0 auto;
+    display: block;
+  }
+
 }
