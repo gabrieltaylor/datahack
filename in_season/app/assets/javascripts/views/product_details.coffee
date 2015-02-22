@@ -37,11 +37,11 @@ class App.Views.ProductDetials extends Backbone.View
 
   _render_production_chart: ->
     chart_data = @model.production_chart_data()
-    console.log chart_data
+
 
     if @model._sum_chart_data('production')
       ctx = @$("#production-chart").get(0).getContext("2d")
-      new Chart(ctx).Doughnut(chart_data)
+      new Chart(ctx).Doughnut(chart_data, {animation : false})
     else
       @$('.production.header').remove()
       @$('#production-chart').remove()
@@ -56,7 +56,6 @@ class App.Views.ProductDetials extends Backbone.View
     calculated_width = @browser_width * 0.8
     @$('#production-chart').width calculated_width
     @$("#in-season-chart").width calculated_width
-
     @$('#production-chart').height calculated_width
     @$("#in-season-chart").height calculated_width
 

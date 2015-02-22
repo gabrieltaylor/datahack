@@ -1,9 +1,9 @@
 .loading-wrap {
   .loading {
     .loading-icon {
-      // JAMES: change me for build
-      // background-image: url("../assets/loading.png");
-      background-image: image-url("loading.png");
+
+      background-image: url("../assets/loading.png");
+      // background-image: image-url("loading.png");
       background-repeat: no-repeat;
       width: 164px;
       height: 105px;
