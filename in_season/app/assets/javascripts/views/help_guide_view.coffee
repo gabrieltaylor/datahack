@@ -22,4 +22,4 @@ class App.Views.HelpGuide extends Backbone.View
     @$el.html @template()
 
   _position: ->
-    $('body').html @el
+    $('#app-wrapper').html @el

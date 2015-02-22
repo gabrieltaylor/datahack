@@ -32,7 +32,7 @@ class App.Views.RecipesView extends Backbone.View
     @$recipes_lists = @$('.recipes-lists')
 
   _position: ->
-    $('body').html @el
+    $('#app-wrapper').html @el
 
   _render_recipes: ->
     @recipes.each (recipe) =>

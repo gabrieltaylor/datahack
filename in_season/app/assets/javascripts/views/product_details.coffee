@@ -37,7 +37,7 @@ class App.Views.ProductDetials extends Backbone.View
     @$el.html @template @model.toJSON()
 
   _position: ->
-    $('body').html @el
+    $('#app-wrapper').html @el
 
   _render_production_chart: ->
     chart_data = @model.production_chart_data()

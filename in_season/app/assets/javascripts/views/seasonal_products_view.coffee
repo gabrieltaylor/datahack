@@ -32,7 +32,7 @@ class App.Views.SeasonalProducts extends Backbone.View
 
 
   _position: ->
-    $('body').html @el
+    $('#app-wrapper').html @el
 
   _render_products: ->
     @seasonal_products.each (product) =>
