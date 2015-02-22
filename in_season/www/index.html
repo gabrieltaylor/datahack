@@ -42,7 +42,15 @@
          <script type="text/javascript" src="assets/application.js">
          </script>
         <script type="text/javascript">
-            app = new App.Controller();
+
+
+            document.addEventListener("deviceready", onDeviceReady, false);
+
+            function onDeviceReady() {
+                window._app = new App.Controller();
+            }
+
+
         </script>
     </body>
 </html>
