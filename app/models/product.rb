@@ -761,7 +761,7 @@ class Product
       nutrition: {:measure=>"125mL", :weight=>65, :calories=>34, :protein=>1, :carbohydrate=>8, :total_sugar=>3, :total_dietary_fibre=>4.2, :calcium=>16, :iron=>0.4, :sodium=>1, :potassium=>98, :vitamin_a=>1, :vitamin_c=>17, :vitamin_b12=>0}
   },
   {
-    name: "Rhubard", months: ["January", "February", "March", "April", "May", "June"],
+    name: "Rhubarb", months: ["January", "February", "March", "April", "May", "June"],
     provinces: {
       "Alberta" => 0,
       "British Columbia" => 99.4,
