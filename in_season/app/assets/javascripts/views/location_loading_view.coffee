@@ -19,7 +19,7 @@ class App.Views.LocationLoadingView extends Backbone.View
     @$manual_select_wrap = @$('.manual-select')
 
   _position: ->
-    $('.content_area').html @el
+    $('#app-wrapper').html @el
 
   _on_device_ready: ->
     navigator.geolocation.getCurrentPosition @geolocation_success, @geolocation_error
