@@ -9,4 +9,13 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+
+    <platform name="android">
+      <icon src="res/android/logo-36x36.png" density="ldpi" />
+      <icon src="res/android/logo-48x48.png" density="mdpi" />
+      <icon src="res/android/logo-72x72.png" density="hdpi" />
+      <icon src="res/android/logo-96x96.png" density="xhdpi" />
+      <icon src="res/android/logo-144x144.png" density="xxhdpi" />
+      <icon src="res/android/logo-192x192.png" density="xxxhdpi" />
+    </platform>
 </widget>

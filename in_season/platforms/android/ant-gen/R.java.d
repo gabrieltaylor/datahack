@@ -12,6 +12,8 @@
 /Users/shirlaw/fun/datahack/in_season/platforms/android/res/drawable-port-mdpi/screen.png \
 /Users/shirlaw/fun/datahack/in_season/platforms/android/res/drawable-port-xhdpi/screen.png \
 /Users/shirlaw/fun/datahack/in_season/platforms/android/res/drawable-xhdpi/icon.png \
+/Users/shirlaw/fun/datahack/in_season/platforms/android/res/drawable-xxhdpi/icon.png \
+/Users/shirlaw/fun/datahack/in_season/platforms/android/res/drawable-xxxhdpi/icon.png \
 /Users/shirlaw/fun/datahack/in_season/platforms/android/res/values/strings.xml \
 /Users/shirlaw/fun/datahack/in_season/platforms/android/res/xml/config.xml \
 /Users/shirlaw/fun/datahack/in_season/platforms/android/ant-build/res/drawable/icon.png \
@@ -26,5 +28,8 @@
 /Users/shirlaw/fun/datahack/in_season/platforms/android/ant-build/res/drawable-port-ldpi/screen.png \
 /Users/shirlaw/fun/datahack/in_season/platforms/android/ant-build/res/drawable-port-mdpi/screen.png \
 /Users/shirlaw/fun/datahack/in_season/platforms/android/ant-build/res/drawable-port-xhdpi/screen.png \
+/Users/shirlaw/fun/datahack/in_season/platforms/android/ant-build/res/drawable-tvdpi/icon.png \
 /Users/shirlaw/fun/datahack/in_season/platforms/android/ant-build/res/drawable-xhdpi/icon.png \
+/Users/shirlaw/fun/datahack/in_season/platforms/android/ant-build/res/drawable-xxhdpi/icon.png \
+/Users/shirlaw/fun/datahack/in_season/platforms/android/ant-build/res/drawable-xxxhdpi/icon.png \
 /Users/shirlaw/fun/datahack/in_season/platforms/android/ant-build/AndroidManifest.xml \
