@@ -24,11 +24,10 @@ class App.Views.SeasonalProducts extends Backbone.View
 
   _fetch_resource: (callback) ->
     @seasonal_products  = new App.Collections.SeasonalProducts
-
     $.ajax
       url: @app.server_url + '/seasonal-products'
       dataType: 'json'
-      data: {month: "February", province: 1}
+      data: {month: "February", province: @app.province_int }
       success:(response) =>
         @seasonal_products.reset response
       error: (error) =>

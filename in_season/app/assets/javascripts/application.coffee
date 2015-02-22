@@ -29,10 +29,8 @@ class App.Controller extends Backbone.Router
 
   initialize: (options = {}) ->
     @province = localStorage.getItem('province')
-
     @on_client = options.on_client
     @server_url = options.server_url || "https://datahack-production.herokuapp.com"
-
     @$content_area = $('#content-area')
 
     Backbone.history.start()
@@ -63,9 +61,6 @@ class App.Controller extends Backbone.Router
 
   _render_frame: ->
     @frame = new App.Views.Frame app: this
-
-
-
 
 
 
