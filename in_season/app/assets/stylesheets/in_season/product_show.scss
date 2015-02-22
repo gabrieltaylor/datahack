@@ -1,18 +1,17 @@
 .button {
-  margin-bottom: 20px;
+  margin-bottom: px;
   background-color: #017400;
 }
 
 .product-details {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   padding: 0 20px;
 
-  .nav {
+  .nav-bar {
     margin-left: -20px;
     margin-right: -20px;
-    overflow: hidden;
-  }
 
+  }
 
   .name {
     h1 {
@@ -39,6 +38,9 @@
   table {
     width: 100%;
     margin-bottom: 20px;
+    tr:nth-of-type(even) {
+        background-color: #EBF8EB !important;
+    }
   }
 
   #production-chart, #in-season-chart {

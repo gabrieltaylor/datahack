@@ -19,6 +19,10 @@ class App.Views.RecipesView extends Backbone.View
   events:
     'click .back' : 'back'
     'click .load-more-recipes' : "load_more_recipes"
+    "click .logo-small": "visit_home_page"
+
+  visit_home_page: ->
+    @app.navigate '', trigger: true
 
   back: ->
     @app.navigate 'seasonal-products/' + @product_id, trigger: true
@@ -28,7 +32,7 @@ class App.Views.RecipesView extends Backbone.View
     @$recipes_lists = @$('.recipes-lists')
 
   _position: ->
-    @app.frame.content_area.html @el
+    $('body').html @el
 
   _render_recipes: ->
     @recipes.each (recipe) =>

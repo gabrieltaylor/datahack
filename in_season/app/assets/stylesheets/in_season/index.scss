@@ -1,19 +1,30 @@
+
+
 .seasonal-products-list {
   color: #011101;
   margin: 10px;
   .seasonal-fruits-list, .seasonal-vegetables-list, .seasonal-seafood-list { list-style: none; }
-  .product-list-header { text-align: center; }
+  .product-list-header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 100;
+    letter-spacing: 3px;
+  }
+
+
   li {
     padding: 20px 10px;
-    border-bottom: 1px #011101 solid;
-    .product-name {font-size: 24px;}
+    border-bottom: 1px #ddd solid;
+    color: rgba(87, 50, 35, 0.82);
+    letter-spacing: 3px; text-transform: uppercase;
+    .product-name {font-size: 15px;}
     .sprout-icon {float: right; margin-left: 5px; padding-top: 10px;}
     &:last-child {
       border-bottom: none;
     }
   }
 }
-.product-footnote { margin-left: 30px; }
+.product-footnote { color: black; margin-left: 30px; font-size: 14px }
 .no-bullets {
   list-style-type: none;
 }
@@ -27,49 +38,28 @@
   margin-bottom: 0.5rem;
 }
 
-// .recipes-lists{
-//     // -moz-column-count: 2;
-//     // -moz-column-gap: 0;
-//     // -webkit-column-count: 2;
-//     // -webkit-column-gap: 0;
-//     // column-count: 2;
-//     // column-gap: 0;
-//     // width: 100%;
-//     // margin-bottom: 3rem;
 
-//     // a.recipe{
-//     //     display: inline-block; /* Display inline-block, and absolutely NO FLOATS! */
-//     //     margin-bottom: 1rem;
-//     //     width: 100%;
-//     //     position: relative;
-//     // }
-// }
+.nav-bar{
+  height: 70px;
+  background: white;
+  box-shadow: 0 0.5px 4px rgba(#017400, 0.8);
+  .logo-small {
+    background-image: image-url("icon_small.png");
+    background-repeat: no-repeat;
+    width: 101px;
+    height: 24px;
+    display: inline-block;
+    margin: 20px 0 0 10px;
 
+  }
+  .actions {
+    float: right;
+    margin-top: 17px; margin-right: 10px;
+    .button{
+      margin-bottom: 0px;
+      padding: 11px 24px;
+      font-size: 12px;
+    }
+  }
 
-// .image-with-overlay {
-//    position: relative;
-//    width: 100%; /* for IE 6 */
-// }
-
-// .image-overlay-text {
-//    position: absolute;
-//    top: 50px;
-//    left: 0;
-//    width: 100%;
-// }
-// .main-nav{
-//   height: 70px;
-//   background: #1abc9c;
-//   .logo-small {
-//     background-image: image-url("icon_small.png");
-//     background-repeat: no-repeat;
-//     width: 101px;
-//     height: 24px;
-//     display: inline-block;
-//     margin: 20px 0 0 10px;
-//   }
-
-//   .province {
-//     margin: 10px 10px 0 0;
-//   }
-// }
+}

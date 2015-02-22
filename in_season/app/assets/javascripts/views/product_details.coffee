@@ -22,6 +22,10 @@ class App.Views.ProductDetials extends Backbone.View
   events:
     'click .back' : 'back'
     'click .recipies' : 'show_recepies'
+    "click .logo-small":  "visit_home_page"
+
+  visit_home_page: ->
+    @app.navigate '', trigger: true
 
   back: ->
     @app.navigate "seasonal-products", trigger: true
@@ -33,7 +37,7 @@ class App.Views.ProductDetials extends Backbone.View
     @$el.html @template @model.toJSON()
 
   _position: ->
-    @app.frame.content_area.html @el
+    $('body').html @el
 
   _render_production_chart: ->
     chart_data = @model.production_chart_data()
@@ -58,11 +62,6 @@ class App.Views.ProductDetials extends Backbone.View
     @$("#in-season-chart").width calculated_width
     @$('#production-chart').height calculated_width
     @$("#in-season-chart").height calculated_width
-
-
-
-
-
 
 
 
