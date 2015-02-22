@@ -1,40 +1,37 @@
-
-.main-nav{
-  height: 70px;
-  background: #1abc9c;
-  .logo-small {
-    background-image: image-url("icon_small.png");
-    background-repeat: no-repeat;
-    width: 101px;
-    height: 24px;
-    display: inline-block;
-    margin: 20px 0 0 10px;
-  }
-
-  .province {
-    margin: 10px 10px 0 0;
+.seasonal-products-list {
+  color: #011101;
+  list-style: none;
+  margin: 10px;
+  li {
+    padding: 20px 10px;
+    border-bottom: 1px #011101 solid;
+    .local {
+      float: right;
+      border: 1px #017400 solid;
+      font-size: 14px;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
   }
 }
 
-#background-img {
-  z-index: -1;
-  position: fixed;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  color: #ecf0f1;
-  background: #ecf0f1;
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    min-width: 50%;
-    min-height: 50%;
-  }
 
-}
+// .main-nav{
+//   height: 70px;
+//   background: #1abc9c;
+//   .logo-small {
+//     background-image: image-url("icon_small.png");
+//     background-repeat: no-repeat;
+//     width: 101px;
+//     height: 24px;
+//     display: inline-block;
+//     margin: 20px 0 0 10px;
+//   }
 
+//   .province {
+//     margin: 10px 10px 0 0;
+//   }
+// }

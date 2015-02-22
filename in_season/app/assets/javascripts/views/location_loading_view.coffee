@@ -33,7 +33,6 @@ class App.Views.LocationLoadingView extends Backbone.View
           province = results[0].address_components[5].long_name
           localStorage.setItem "province", province
           @app.province = localStorage.getItem('province')
-
           @app.navigate "seasonal-products", trigger: true
         else
           alert 'No results found'
