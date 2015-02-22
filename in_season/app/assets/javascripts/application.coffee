@@ -45,6 +45,7 @@ class App.Controller extends Backbone.Router
     'seasonal-products/:id': "seasonal_product"
     "seasonal-products/:id/recipes/:product_name" : "show_recipes"
     "help-guide": 'show_help_guide'
+
   location: ->
     if @province
       @navigate 'seasonal-products', trigger: true, replace: true
@@ -52,7 +53,6 @@ class App.Controller extends Backbone.Router
       new App.Views.LocationLoadingView app: this
 
   seasonal_products: ->
-    # @_render_frame()
     console.log "seasonal"
     new App.Views.SeasonalProducts app: this
 
@@ -63,8 +63,8 @@ class App.Controller extends Backbone.Router
     new App.Views.RecipesView app: this, product_name: product_name, product_id: id
 
   show_help_guide: ->
-
     new App.Views.HelpGuide app: this
+
   _render_frame: ->
     @frame = new App.Views.Frame app: this
 

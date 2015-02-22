@@ -6,7 +6,7 @@ class App.Views.LocationLoadingView extends Backbone.View
     @app = options.app
     @_render()
     @_position()
-    @_on_device_ready()
+    # @_on_device_ready()
     # document.addEventListener 'deviceready', @_on_device_ready, false
 
   events:
