@@ -26,7 +26,7 @@ gem "uglifier"
 gem "unicorn"
 gem 'in_season', path: 'in_season'
 gem 'ejs'
-
+gem 'httparty'
 
 
 group :development do

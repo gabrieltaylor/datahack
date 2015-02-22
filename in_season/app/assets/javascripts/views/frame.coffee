@@ -18,7 +18,6 @@ class App.Views.Frame extends Backbone.View
     @app.province = @$('#provinces').val()
 
   _render: ->
-    console.log @app.province
     @$el.html @template province: @app.province
     @content_area = @$('.content-area')
 
