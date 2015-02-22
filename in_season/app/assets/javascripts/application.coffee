@@ -65,37 +65,10 @@ class App.Controller extends Backbone.Router
     @frame = new App.Views.Frame app: this
 
 
+  show_loading: ->
+    $('.application-loading').removeClass 'hide'
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  hide_loading: ->
+    $('.application-loading').addClass 'hide'
 
 

@@ -16,6 +16,12 @@
 <body class="<%= body_class %>">
   <%= yield %>
   <div id="content-area"></div>
+  <div class="loading-wrap application-loading hide">
+    <div class="loading">
+      <div class="loading-icon"></div>
+      Loading<i class="ellipsis"><i>.</i><i>.</i><i>.</i></i>
+    </div>
+  </div>
   <%= render "javascript" %>
   <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
