@@ -8,33 +8,80 @@
 
 <canvas id="production-chart" width="400" height="400"></canvas>
 
+
+<div class="header">
+  <h2>Nutrition</h2>
+</div>
+
 <table>
-  <tr>
-    <th>Serving Size</th>
-    <td>
-      <%= nutrition['measure'] %> (<%= nutrition['weight']%>g)
-    </td>
-  </tr>
-  <tr>
-    <th>Protein</th>
-    <td><%= nutrition["protein"] %></td>
-  </tr>
-  <tr>
-    <th>Calories</th>
-    <td><%= nutrition["calories"] %></td>
-  </tr>
-  <tr>
-    <th>Carbohydrates</th>
-    <td><%= nutrition["carbohydrates"] %></td>
-  </tr>
-  <tr>
-    <th>Total sugar</th>
-    <td><%= nutrition["total_sugar"] %></td>
-  </tr>
-  <tr>
-    <th>Total dietary fibre</th>
-    <td><%= nutrition["total_dietary_fibre"] %></td>
-  </tr>
+  <!-- <thead>
+    <tr>
+      <th width="200">Table Header</th>
+      <th>Table Header</th>
+      <th width="150">Table Header</th>
+      <th width="150">Table Header</th>
+    </tr>
+  </thead> -->
+  <tbody>
+    <tr>
+      <td width="200">Serving Size</td>
+      <td><%= nutrition['measure'] %> (<%= nutrition['weight']%>g)</td>
+    </tr>
+    <tr>
+      <td width="200">Protein</td>
+      <td><%= nutrition["protein"] %></td>
+    </tr>
+    <tr>
+      <td width="200">Calories</td>
+      <td><%= nutrition["calories"] %></td>
+    </tr>
+    <tr>
+      <td width="200">Carbohydrates</td>
+      <td><%= nutrition["carbohydrates"] %></td>
+    </tr>
+    <tr>
+      <td width="200">Total sugar</td>
+      <td><%= nutrition["total_sugar"] %></td>
+    </tr>
+    <tr>
+      <td width="200">Total dietary fibre</td>
+      <td><%= nutrition["total_dietary_fibre"] %></td>
+    </tr>
+  </tbody>
 </table>
 
+<!-- <div class="row">
+  <div class="small-10 columns">
+    <table id='nutrition'>
+      <tbody>
+        <tr>
+          <th>Serving Size</th>
+          <td>
+            <%= nutrition['measure'] %> (<%= nutrition['weight']%>g)
+          </td>
+        </tr>
 
+        <tr>
+          <th>Protein</th>
+          <td><%= nutrition["protein"] %></td>
+        </tr>
+        <tr>
+          <th>Calories</th>
+          <td><%= nutrition["calories"] %></td>
+        </tr>
+        <tr>
+          <th>Carbohydrates</th>
+          <td><%= nutrition["carbohydrates"] %></td>
+        </tr>
+        <tr>
+          <th>Total sugar</th>
+          <td><%= nutrition["total_sugar"] %></td>
+        </tr>
+        <tr>
+          <th>Total dietary fibre</th>
+          <td><%= nutrition["total_dietary_fibre"] %></td>
+        </tr>
+      <tbody>
+    </table>
+  </div>
+</div> -->
