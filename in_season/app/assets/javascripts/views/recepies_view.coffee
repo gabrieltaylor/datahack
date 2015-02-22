@@ -8,11 +8,11 @@ class App.Views.RecipesView extends Backbone.View
     @product_name = options.product_name
     @recipes = new App.Collections.Recipes
     @page = 1
-    # @_get_recepies =>
-    @app = options.app
-    @_render()
-    @_position()
-    #   @_render_recipes()
+    @_get_recepies =>
+      @app = options.app
+      @_render()
+      @_position()
+      @_render_recipes()
 
   events:
     'click .load-more-recipes' : "load_more_recipes"
