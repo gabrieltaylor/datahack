@@ -1,0 +1,19 @@
+.recipes-list{
+  background: white;
+}
+
+.recipe-item{
+  width: 50% !important;
+  height: auto !important;
+  .image-wrapper{
+    position: relative;
+  }
+
+  .image-overlay-text{
+    position:absolute;
+    bottom: 0px; color: rgba(white, 0.8);
+    background: rgba(black, 0.4);
+    width: 100%;
+  }
+}
+

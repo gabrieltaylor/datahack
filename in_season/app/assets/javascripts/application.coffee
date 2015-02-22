@@ -1,4 +1,5 @@
 #= require ./namespace
+#= require masonry
 #= require chart_js
 #= require moment
 #= require jquery

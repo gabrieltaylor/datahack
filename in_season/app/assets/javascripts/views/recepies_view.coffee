@@ -26,7 +26,6 @@ class App.Views.RecipesView extends Backbone.View
     @$el.html @template()
     @$recipes_lists = @$('.recipes-lists')
 
-
   _position: ->
     @app.frame.content_area.html @el
 
@@ -34,6 +33,8 @@ class App.Views.RecipesView extends Backbone.View
     @recipes.each (recipe) =>
       new App.Views.RecipeView
         wrapper: @$recipes_lists, model: recipe, app: @app, parent: this
+
+    @_init_masonry()
 
   _get_recepies: (callback)->
     $.ajax
@@ -57,7 +58,12 @@ class App.Views.RecipesView extends Backbone.View
       @_render_recipes()
 
 
+  _init_masonry: ->
+    new Masonry @$recipes_lists[0], {
+      # columnWidth: 100,
 
+      itemSelector: '.recipe-item'
+    }
 
 
 
