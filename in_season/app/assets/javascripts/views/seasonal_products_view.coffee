@@ -28,6 +28,7 @@ class App.Views.SeasonalProducts extends Backbone.View
     $.ajax
       url: @app.server_url + '/seasonal-products'
       dataType: 'json'
+      data: {month: "February", province: 1}
       success:(response) =>
         @seasonal_products.reset response
       error: (error) =>
