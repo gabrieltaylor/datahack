@@ -41,7 +41,7 @@ class App.Controller extends Backbone.Router
     "" : "location"
     'seasonal-products': "seasonal_products"
     'seasonal-products/:id': "seasonal_product"
-    "recipes/:product_name" : "show_recipes"
+    "seasonal-products/:id/recipes/:product_name" : "show_recipes"
 
   location: ->
     if @province
@@ -56,8 +56,8 @@ class App.Controller extends Backbone.Router
   seasonal_product: (id) ->
     new App.Views.ProductDetials app: this, product_id: id
 
-  show_recipes: (product_name) ->
-    new App.Views.RecipesView app: this, product_name: product_name
+  show_recipes: (id, product_name) ->
+    new App.Views.RecipesView app: this, product_name: product_name, product_id: id
 
   _render_frame: ->
     @frame = new App.Views.Frame app: this

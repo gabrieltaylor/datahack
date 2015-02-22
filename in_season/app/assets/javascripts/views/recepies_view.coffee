@@ -3,6 +3,7 @@ class App.Views.RecipesView extends Backbone.View
   className: 'recipes'
 
   initialize: (options) ->
+    @product_id = options.product_id
     @app = options.app
     @frame = options.frame
     @product_name = options.product_name
@@ -15,7 +16,12 @@ class App.Views.RecipesView extends Backbone.View
       @_render_recipes()
 
   events:
+    'click .back' : 'back'
     'click .load-more-recipes' : "load_more_recipes"
+
+  back: ->
+    @app.navigate 'seasonal-products/' + @product_id, trigger: true
+
 
   _render: ->
     @$el.html @template()

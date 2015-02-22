@@ -3,6 +3,7 @@ class App.Views.ProductDetials extends Backbone.View
   className: 'product-details'
 
   initialize: (options) ->
+    console.log 'asdfasdf'
     @app = options.app
     @frame = options.frame
 
@@ -29,7 +30,7 @@ class App.Views.ProductDetials extends Backbone.View
     @app.navigate "seasonal-products", trigger: true
 
   show_recepies: ->
-    @app.navigate "recipes/#{@model.get('name')}", trigger: true
+    @app.navigate "seasonal-products/"+@model.id+"/recipes/#{@model.get('name')}", trigger: true
 
   _render: ->
     @$el.html @template @model.toJSON()
