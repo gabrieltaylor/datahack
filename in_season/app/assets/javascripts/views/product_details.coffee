@@ -3,16 +3,13 @@ class App.Views.ProductDetials extends Backbone.View
   className: 'product-details'
 
   initialize: (options) ->
-    console.log 'asdfasdf'
     @app = options.app
     @frame = options.frame
 
     @browser_width = $(window).width()
 
-
     if @app.seasonal_products.length
-      @model = @app.seasonal_products.get options.product_id
-      console.log @model
+      @model = @app.seasonal_products.get(options.product_id)
       @_render()
       @_position()
       @_render_production_chart()
@@ -40,7 +37,7 @@ class App.Views.ProductDetials extends Backbone.View
 
   _render_production_chart: ->
     chart_data = @model.production_chart_data()
-
+    console.log chart_data
 
     if @model._sum_chart_data('production')
       ctx = @$("#production-chart").get(0).getContext("2d")

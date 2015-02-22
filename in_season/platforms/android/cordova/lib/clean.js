@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /*
        Licensed to the Apache Software Foundation (ASF) under one
        or more contributor license agreements.  See the NOTICE file
@@ -15,21 +17,23 @@
        KIND, either express or implied.  See the License for the
        specific language governing permissions and limitations
        under the License.
+*/
+
+var build = require('./build'),
+    spawn = require('./spawn'),
+    path  = require('path');
+
+/*
+ * Cleans the project using ant
+ * Returns a promise.
  */
+module.exports.run = function() {
+    var args = build.getAntArgs('clean');
+    return spawn('ant', args);
+}
 
-package com.example.hello;
-
-import android.os.Bundle;
-import org.apache.cordova.*;
-
-public class CordovaApp extends CordovaActivity
-{
-    @Override
-    public void onCreate(Bundle savedInstanceState)
-    {
-        super.onCreate(savedInstanceState);
-        super.init();
-        // Set by <content src="index.html" /> in config.xml
-        loadUrl(launchUrl);
-    }
+module.exports.help = function() {
+    console.log('Usage: ' + path.relative(process.cwd(), process.argv[1]));
+    console.log('Cleans the project directory.');
+    process.exit(0);
 }

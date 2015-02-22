@@ -1,33 +1,30 @@
 class App.Models.SeasonalProduct extends Backbone.Model
 
   production_chart_data: ->
-    @production_chart_data = []
+    @_production_chart_data = []
     color_index = 0
     _(@get('provinces')).each (value, province) =>
-      @production_chart_data.push {
+      @_production_chart_data.push {
         value: value,
         color: @_province_color(province) ,
         highlight: @_province_color(province, 0.7),
         label: province
       }
 
-    @production_chart_data
+    @_production_chart_data
 
   in_season_chart_data: (province) ->
-
-
-    @in_season_chart_data = {}
-    @in_season_chart_data.labels = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+    in_season_chart_data = {}
+    in_season_chart_data.labels = ["January","February","March","April","May","June","July","August","September","October","November","December"]
     color_index = 0
     data = []
-
-    _(@in_season_chart_data.labels).each (month) =>
+    _(in_season_chart_data.labels).each (month) =>
       if month in @get('months')
         data.push 1
       else
         data.push 0
 
-    @in_season_chart_data.datasets = [{
+    in_season_chart_data.datasets = [{
       fillColor: "rgba(151,187,205,0.2)",
       strokeColor: "rgba(151,187,205,1)",
       pointColor: "rgba(151,187,205,1)",
@@ -37,7 +34,7 @@ class App.Models.SeasonalProduct extends Backbone.Model
       data: data
     }]
 
-    @in_season_chart_data
+    in_season_chart_data
 
 
   _province_color: (name, opacity= 1) ->
@@ -57,7 +54,7 @@ class App.Models.SeasonalProduct extends Backbone.Model
     "rgba(#{rgb}, #{opacity})"
 
   _sum_chart_data: (name)->
-    chart_data = @["#{name}_chart_data"]
+    chart_data = @["_#{name}_chart_data"]
     total_value = 0
     _(chart_data).each (data_point) =>
       total_value += data_point.value

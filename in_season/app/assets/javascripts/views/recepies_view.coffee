@@ -22,7 +22,6 @@ class App.Views.RecipesView extends Backbone.View
   back: ->
     @app.navigate 'seasonal-products/' + @product_id, trigger: true
 
-
   _render: ->
     @$el.html @template()
     @$recipes_lists = @$('.recipes-lists')
@@ -46,7 +45,6 @@ class App.Views.RecipesView extends Backbone.View
       dataType: 'json'
       beforeSend: => @app.show_loading()
       success:(response) =>
-        console.log response
         @recipes.reset response.recipes
       error: (error) => console.log "Error"
       complete: =>
