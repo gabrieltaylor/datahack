@@ -61,7 +61,13 @@ class App.Models.SeasonalProduct extends Backbone.Model
 
     total_value
 
-
-
-
+  local_rating: (province)->
+    if @get('provinces')[province] > 40
+      3
+    else if @get('provinces')[province] > 20
+      2
+    else if @get('provinces')[province] > 5
+      1
+    else
+      0
 
