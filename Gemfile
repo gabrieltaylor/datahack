@@ -26,7 +26,8 @@ gem "uglifier"
 gem "unicorn"
 gem 'in_season', path: 'in_season'
 gem 'ejs'
-
+gem 'httparty'
+gem 'rack-cors'
 
 
 group :development do

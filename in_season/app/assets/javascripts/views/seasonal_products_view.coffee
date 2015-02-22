@@ -23,5 +23,14 @@ class App.Views.SeasonalProducts extends Backbone.View
       new App.Views.SeasonalProduct wrapper: @$products_lists, model: product, app: @app
 
   _fetch_resource: (callback) ->
-    @seasonal_products  = new App.Collections.SeasonalProducts [{name: "Apple"}, {name: "Orange"}, {name: "Bananna"}]
-    callback()
+    @seasonal_products  = new App.Collections.SeasonalProducts
+
+    $.ajax
+      url: @app.server_url + '/seasonal-products'
+      dataType: 'json'
+      success:(response) =>
+        @seasonal_products.reset response
+      error: (error) =>
+        console.log "Error"
+      complete: =>
+        callback()

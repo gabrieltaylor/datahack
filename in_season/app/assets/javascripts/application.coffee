@@ -31,10 +31,9 @@ class App.Controller extends Backbone.Router
     @province = localStorage.getItem('province')
 
     @on_client = options.on_client
-    @server_url = options.server_url || "http://localhost:5000"
+    @server_url = options.server_url || "https://datahack-production.herokuapp.com"
 
     @$content_area = $('#content-area')
-
 
     Backbone.history.start()
 
@@ -43,13 +42,13 @@ class App.Controller extends Backbone.Router
     "" : "location"
     'seasonal-products': "seasonal_products"
     'seasonal-products/:id': "show_product_details"
-
+    "recipes/:product_name" : "show_recipes"
 
   location: ->
     if @province
       @navigate 'seasonal-products', trigger: true, replace: true
     else
-      new App.Views.LocationLoadingView app: @
+      new App.Views.LocationLoadingView app: this
 
   seasonal_products: ->
     @_render_frame()
@@ -59,6 +58,8 @@ class App.Controller extends Backbone.Router
     @_render_frame()
     new App.Views.ProductDetials app: this
 
+  show_recipes: (product_name) ->
+    new App.Views.RecipesView app: this, product_name: product_name
 
   _render_frame: ->
     @frame = new App.Views.Frame app: this
