@@ -14,6 +14,7 @@ class App.Views.RecipesView extends Backbone.View
       @_render()
       @_position()
       @_render_recipes()
+      @_init_masonry()
 
   events:
     'click .back' : 'back'
@@ -34,7 +35,7 @@ class App.Views.RecipesView extends Backbone.View
       new App.Views.RecipeView
         wrapper: @$recipes_lists, model: recipe, app: @app, parent: this
 
-    @_init_masonry()
+
 
   _get_recepies: (callback)->
     $.ajax
@@ -49,7 +50,6 @@ class App.Views.RecipesView extends Backbone.View
         @recipes.reset response.recipes
       error: (error) => console.log "Error"
       complete: =>
-        @app.hide_loading()
         callback()
 
   load_more_recipes: ->
@@ -59,11 +59,11 @@ class App.Views.RecipesView extends Backbone.View
 
 
   _init_masonry: ->
-    new Masonry @$recipes_lists[0], {
-      # columnWidth: 100,
-
-      itemSelector: '.recipe-item'
-    }
+    imagesLoaded @$recipes_lists, =>
+      new Masonry @$recipes_lists[0], {
+        itemSelector: '.recipe-item'
+      }
+      @app.hide_loading()
 
 
 

@@ -1,5 +1,6 @@
 #= require ./namespace
 #= require masonry
+#= require images_loaded
 #= require chart_js
 #= require moment
 #= require jquery

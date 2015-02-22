@@ -1,5 +1,12 @@
 .recipes-list{
-  background: white;
+
+  -webkit-column-count: 2;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    2;
+  -moz-column-gap:      0px;
+  column-count:         2;
+  column-gap:           0px;
+
 }
 
 .recipe-item{
@@ -12,8 +19,11 @@
   .image-overlay-text{
     position:absolute;
     bottom: 0px; color: rgba(white, 0.8);
+    left: 0px;
     background: rgba(black, 0.4);
     width: 100%;
   }
 }
+
+
 

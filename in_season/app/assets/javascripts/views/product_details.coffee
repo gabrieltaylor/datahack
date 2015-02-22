@@ -49,7 +49,7 @@ class App.Views.ProductDetials extends Backbone.View
   _render_in_season_chart: ->
     chart_data = @model.in_season_chart_data()
     ctx = @$("#in-season-chart").get(0).getContext("2d")
-    new Chart(ctx).Radar(chart_data, {scaleOverride: true, scaleStartValue: 0, scaleStepWidth: 1, scaleSteps: 1})
+    new Chart(ctx).Radar(chart_data, {scaleOverride: true, scaleStartValue: 0, scaleStepWidth: 1, scaleSteps: 1, animation : false})
 
 
   _set_width_of_charts: ->
