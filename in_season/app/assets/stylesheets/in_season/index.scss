@@ -2,6 +2,7 @@
   color: #011101;
   margin: 10px;
   .seasonal-fruits-list, .seasonal-vegetables-list, .seasonal-seafood-list { list-style: none; }
+  .product-list-header { text-align: center; }
   li {
     padding: 20px 10px;
     border-bottom: 1px #011101 solid;
@@ -49,16 +50,16 @@
 }
 
 
-.image-with-overlay { 
-   position: relative; 
+.image-with-overlay {
+   position: relative;
    width: 100%; /* for IE 6 */
 }
 
-.image-overlay-text { 
-   position: absolute; 
-   top: 50px; 
-   left: 0; 
-   width: 100%; 
+.image-overlay-text {
+   position: absolute;
+   top: 50px;
+   left: 0;
+   width: 100%;
 }
 // .main-nav{
 //   height: 70px;
