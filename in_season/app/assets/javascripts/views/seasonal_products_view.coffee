@@ -13,14 +13,21 @@ class App.Views.SeasonalProducts extends Backbone.View
 
   _render: ->
     @$el.html @template()
-    @$products_lists = @$('.seasonal-products-list')
+    @$fruits_lists = @$('.seasonal-fruits-list')
+    @$vegetables_lists = @$('.seasonal-vegetables-list')
+    @$seafood_lists = @$('.seasonal-seafood-list')
 
   _position: ->
     @app.frame.content_area.html @el
 
   _render_products: ->
     @seasonal_products.each (product) =>
-      new App.Views.SeasonalProduct wrapper: @$products_lists, model: product, app: @app
+      if product.attributes.context is "fruit"
+        new App.Views.SeasonalProduct wrapper: @$fruits_lists, model: product, app: @app
+      if product.attributes.context is "vegetable"
+        new App.Views.SeasonalProduct wrapper: @$vegetables_lists, model: product, app: @app
+      if product.attributes.context is "seafood"
+        new App.Views.SeasonalProduct wrapper: @$seafood_lists, model: product, app: @app
 
   _fetch_resource: (callback) ->
     @seasonal_products  = @app.seasonal_products
@@ -28,7 +35,6 @@ class App.Views.SeasonalProducts extends Backbone.View
     $.ajax
       url: @app.server_url + '/seasonal-products'
       dataType: 'json'
-      data: {month: "February", province: @app.province_int}
       beforeSend: => @app.show_loading()
       success:(response) =>
         @seasonal_products.reset response
