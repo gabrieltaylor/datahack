@@ -21,7 +21,7 @@ class Product
   def self.harvested_in(month:, province: nil)
     if province
       all.select { |p| p.months.include?(month) }
-      .sort_by { |p| p[:provinces][province] }
+      .sort { |a,b| b.provinces[province] <=> a.provinces[province] }
     else
       all.select { |p| p.months.include?(month) }
     end
