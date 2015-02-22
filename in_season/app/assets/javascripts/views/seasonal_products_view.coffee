@@ -5,11 +5,24 @@ class App.Views.SeasonalProducts extends Backbone.View
 
   initialize: (options) ->
     @app = options.app
-
+    console.log "init season"
     @_fetch_resource =>
       @_render()
       @_position()
       @_render_products()
+
+  events:
+    'click .help-guide' : 'visit_help_guide'
+    "click .logo-small" : "visit_home_page"
+
+  visit_home_page: ->
+    @app.navigate '', trigger: true
+
+  visit_help_guide: ->
+    @app.navigate 'help-guide', trigger: true
+
+
+
 
   _render: ->
     @$el.html @template()
@@ -17,8 +30,9 @@ class App.Views.SeasonalProducts extends Backbone.View
     @$vegetables_lists = @$('.seasonal-vegetables-list')
     @$seafood_lists = @$('.seasonal-seafood-list')
 
+
   _position: ->
-    @app.frame.content_area.html @el
+    $('#app-wrapper').html @el
 
   _render_products: ->
     @seasonal_products.each (product) =>
@@ -29,6 +43,7 @@ class App.Views.SeasonalProducts extends Backbone.View
       if product.attributes.context is "seafood"
         new App.Views.SeasonalProduct wrapper: @$seafood_lists, model: product, app: @app
 
+    console.log "Render products"
   _fetch_resource: (callback) ->
     @seasonal_products  = @app.seasonal_products
 
@@ -42,3 +57,6 @@ class App.Views.SeasonalProducts extends Backbone.View
       complete: =>
         @app.hide_loading()
         callback()
+
+
+

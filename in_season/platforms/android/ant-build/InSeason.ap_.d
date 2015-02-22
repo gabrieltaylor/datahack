@@ -69,6 +69,7 @@
 /Users/Greg/Desktop/work/datahack/in_season/platforms/android/assets/www/assets/icon_small.png \
 /Users/Greg/Desktop/work/datahack/in_season/platforms/android/assets/www/assets/loading.png \
 /Users/Greg/Desktop/work/datahack/in_season/platforms/android/assets/www/assets/peach_m.jpg \
+/Users/Greg/Desktop/work/datahack/in_season/platforms/android/assets/www/assets/sprout_icon.png \
 /Users/Greg/Desktop/work/datahack/in_season/platforms/android/assets/www/css/index.css \
 /Users/Greg/Desktop/work/datahack/in_season/platforms/android/assets/www/img/logo.png \
 /Users/Greg/Desktop/work/datahack/in_season/platforms/android/assets/www/js/index.js \
